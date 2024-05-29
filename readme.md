@@ -16,11 +16,14 @@ This repository contains all of my lecture contents, practice sheets and other c
   - [Theory of Computation](#theory-of-computation)
   - [What is Computability theory?](#what-is-computability-theory)
   - [What is Automata theory?](#what-is-automata-theory)
-  - [Mathematical Notions and Terminologies](#mathematical-notions-and-terminologies)
+  - [Essential Mathematical Notions and Terminologies](#essential-mathematical-notions-and-terminologies)
     - [Sets and Tuples](#sets-and-tuples)
       - [Subset](#subset)
     - [Strings and Languages](#strings-and-languages)
     - [Regular operations](#regular-operations)
+  - [Regular Language and Finite Automata](#regular-language-and-finite-automata)
+    - [DFA (Deterministic Finite Automata)](#dfa-deterministic-finite-automata)
+    - [Example Problems](#example-problems)
 - [Lecture 2](#lecture-2)
 
 # Course Overview
@@ -74,12 +77,16 @@ Timing Will be added after confirmation of my routine.
 ## Theory of Computation
 Theory of Computation deals with the fundamental mathematical properties of computer hardware, software, and certain applications. In researching this topic, we want to know what can and cannot be computed, how quickly, with how much memory, and on what type of computational model. Traditionally the central three areas of Theory of Computation are: automata, computability, and complexity.
 
-![alt text](Media/Lecture1/lec1fig1.png)
+<p align="center">
+  <img src="Media/Lecture1/lec1fig1.png" />
+</p>
 
 I know some of you might be interested in mathematical stuffs but some of you here are out of choice. You may just want to obtain a degree in Computer Science, and a course in theory is required—God knows why. After all, isn’t theory arcane, boring, and worst of all, irrelevant?
 Well, theory can be sometimes boring and tiresome but it is fun to solve Automata problems (you'll see shortly).
 
-![alt text](Media/Lecture1/lec1fig2.png)
+<p align="center">
+  <img src="Media/Lecture1/lec1fig2.png" />
+</p>
 
 Also, theory is not totally irrelevant and useless. Here's an idea of how the theory you learn here will be of useful for you in practice:
 * Designing a new programming language for a specialized application? 
@@ -100,7 +107,7 @@ In mathematical theory a lot of problems can be solved but in computability theo
 Automata is the definitions and properties of mathematical models of computation. It is the study of abstract machines/computers. An automaton is an abstract computer/machine. 
 Automata theory has applications in programming language design, compiler construction, text processing, software verification, and natural language processing etc.
 
-## Mathematical Notions and Terminologies
+## Essential Mathematical Notions and Terminologies
 ### Sets and Tuples
 * A set is a group of objects represented as a unit. Example: S = {7, 21, 57}      
 * Those objects are called elements or members of that set.
@@ -135,6 +142,7 @@ If  A = {1, 2}; 	B = {1, 2, 3}    Then, A ⊆ B  and A⊂B
   *We generally use capital Greek letters capital sigma Σ or capital gamma Γ to designate alphabets*
 * String: a finite sequence of symbols over an alphabet set. 
   *An empty string is represented using epsilon, ε*
+  *Any part of a string is called substring*
 * Language: a set of strings
 Example: 
 Σ = {0,1} 			
@@ -146,6 +154,10 @@ Suppose,
 A = {1, 3, 4}	  
 B = {3, 4, 6}   
 Universal set, U = {1, 2, 3, 4, 5, 6}
+
+<p align="center">
+  <img src="Media/Lecture1/lec1fig3.png" />
+</p>
  
 **Compliment** of A = **A̅**= {2, 5, 6}
 **Union** of A and B = **A ∪ B** = {1, 3, 4, 6}
@@ -156,8 +168,47 @@ String P = "Bangla"
 String Q = "desh"
 
 **Concatanation** of P and Q = **P◦Q** = {xy| x ∈ P and y ∈ Q} = "Bangladesh"
-                        
-**Kleene Closure** of Q = Q* = = {x<sub>1</sub>x<sub>2</sub> . . . x<sub>k</sub>| k ≥ 0 and each x<sub>i</sub> ∈ A}.
+**Kleene Closure** of Q = Q* = {x<sub>1</sub>x<sub>2</sub> . . . x<sub>k</sub>| k ≥ 0 and each x<sub>i</sub> ∈ Q} = ε, desh, deshdesh, deshdeshdesh...
+
+## Regular Language and Finite Automata
+* Finite automata are mathematical models for computers with an extremely limited amount of memory.
+* Automata is a plural form of Automaton. So, a single model is called a finite automaton or a finite state machine.
+* A language is called a regular language if some finite automaton recognizes it.
+
+
+<p align="center" weight="bold">
+Regular Language for the given automaton should be, </br>
+<b>L = {w ∈ {0, 1}* | w has a substring 11}</b>
+</p>
+
+<p align="center">
+  <img src="Media/Lecture1/lec1fig4.png" />
+  <i>Source: MIT Lecture of Micheal Sipson</i>
+</p>
+
+<p align="center">
+  <img src="Media/Lecture1/lec1fig5.png" />
+  <i>Source: Micheal Sipson' book page 35-36</i>
+</p>
+
+Types of finite automata: 
+- Deterministic finite automata **(DFA)** 
+- Non-deterministic finite automata **(NFA)**
+
+The example we saw above is a DFA.
+
+### DFA (Deterministic Finite Automata)
+* A DFA accepts or rejects an input string based on whether a regular language reaches a final/accept state or not. 
+* From each state a transition leads to a unique state.
+
+* What we can’t do in DFA design:
+  * Multiple starting states (Remember it can have multiple accept states)
+  * Empty/null/epsilon (ε) transitions
+  * Multiple different transitions for a single symbol
+  * Any state with no transitions or partial transitions
+### Example Problems
+
+  
 
 
 # Lecture 2
