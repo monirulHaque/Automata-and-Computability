@@ -78,14 +78,14 @@ Timing Will be added after confirmation of my routine.
 Theory of Computation deals with the fundamental mathematical properties of computer hardware, software, and certain applications. In researching this topic, we want to know what can and cannot be computed, how quickly, with how much memory, and on what type of computational model. Traditionally the central three areas of Theory of Computation are: automata, computability, and complexity.
 
 <p align="center">
-  <img src="Media/Lecture1/lec1fig1.png" />
+  <img src="Media/Lecture1/lec1fig1.png" width="500" />
 </p>
 
 I know some of you might be interested in mathematical stuffs but some of you here are out of choice. You may just want to obtain a degree in Computer Science, and a course in theory is required—God knows why. After all, isn’t theory arcane, boring, and worst of all, irrelevant?
 Well, theory can be sometimes boring and tiresome but it is fun to solve Automata problems (you'll see shortly).
 
 <p align="center">
-  <img src="Media/Lecture1/lec1fig2.png" />
+  <img src="Media/Lecture1/lec1fig2.png" width="500"/>
 </p>
 
 Also, theory is not totally irrelevant and useless. Here's an idea of how the theory you learn here will be of useful for you in practice:
@@ -156,7 +156,7 @@ B = {3, 4, 6}
 Universal set, U = {1, 2, 3, 4, 5, 6}
 
 <p align="center">
-  <img src="Media/Lecture1/lec1fig3.png" />
+  <img src="Media/Lecture1/lec1fig3.png" width="500"/>
 </p>
  
 **Compliment** of A = **A̅**= {2, 5, 6}
@@ -206,9 +206,92 @@ The example we saw above is a DFA.
   * Empty/null/epsilon (ε) transitions
   * Multiple different transitions for a single symbol
   * Any state with no transitions or partial transitions
+
 ### Example Problems
 
-  
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>1</sub> = {w ∈ {0, 1}*| w ends with a 1}</span>
+</summary>
+<br>
+<p align="center">
+  Notice here, this language set contains strings such as 1, 01, 001, 101, 111, 0101, ... </br>
+  <img src="Media\Lecture1\solve1.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>2</sub> = {w ∈ {0, 1}*| w does not end with a 1}</span>
+</summary>
+<br>
+<p align="center">
+  Notice the language of L<sub>1</sub> and L<sub>2</sub>. L<sub>2</sub> is actually compliment set of L<sub>1</sub>. Now Notice the DFA's of both languages; they are the same DFA's except the accept state.</br>
+  If you have designed a DFA for a language, you can easily create a DFA for its complement set. The states that were previously accept states, will not be accept states anymore and the states that were not accept state before will become accept sates now.
+  <img src="Media\Lecture1\solve2.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>3</sub> = {w ∈ {0, 1}*| w has odd number of 1's}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture1\solve3.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>4</sub> = {w ∈ {0, 1}*| w has even number of 1's}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture1\solve4.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>5</sub> = {w ∈ {0, 1}*| w has substring 11}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture1\solve5.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>6</sub> = {w ∈ {0, 1}*| w has substring 001}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture1\solve6.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>7</sub> = {w ∈ {0, 1}*| contains at least one 1 and even number of 0’s follow the last 1}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture1\solve7.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>8</sub> = {w ∈ {a, b}*| w starts and ends with a or w starts and ends with b }</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture1\solve8.png" width="500"/>
+</p>
+</details>
+
 
 
 # Lecture 2
