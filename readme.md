@@ -13,6 +13,14 @@ This repository contains all of my lecture contents, practice sheets and other c
       - [Other Resources](#other-resources)
     - [Consultation](#consultation)
 - [Lecture 1](#lecture-1)
+  - [Theory of Computation](#theory-of-computation)
+  - [What is Computability theory?](#what-is-computability-theory)
+  - [What is Automata theory?](#what-is-automata-theory)
+  - [Mathematical Notions and Terminologies](#mathematical-notions-and-terminologies)
+    - [Sets and Tuples](#sets-and-tuples)
+      - [Subset](#subset)
+    - [Strings and Languages](#strings-and-languages)
+    - [Regular operations](#regular-operations)
 - [Lecture 2](#lecture-2)
 
 # Course Overview
@@ -54,44 +62,105 @@ This repository contains all of my lecture contents, practice sheets and other c
 - [MIT Micheal Sipser's Lectures](https://www.youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY) {writer of the Text book we follow} (First 4 Lectures only)
 - [Easy Theory Youtube Channel](https://www.youtube.com/@EasyTheory/featured)
 - [University of California Davis Lectures](https://www.youtube.com/playlist?list=PLslgisHe5tBM8UTCt1f66oMkpmjCblzkt)
+- [CS103 Stanford University Lecture Slides](https://web.stanford.edu/class/archive/cs/cs103/cs103.1184/)
 - [Professor Harry Potters Playlist](https://www.youtube.com/playlist?list=PLbtzT1TYeoMjNOGEiaRmm_vMIwUAidnQz)
 - [Anisul Islam's Playlist](https://www.youtube.com/playlist?list=PLgH5QX0i9K3qw5pu16QgnKNj91Rnjoyd0)
 
 ### Consultation
-Will be added after confirmation of my routine.
+Email: ext.monirul.haque@bracu.ac.bd
+Timing Will be added after confirmation of my routine.
 
 # Lecture 1
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
+## Theory of Computation
+Theory of Computation deals with the fundamental mathematical properties of computer hardware, software, and certain applications. In researching this topic, we want to know what can and cannot be computed, how quickly, with how much memory, and on what type of computational model. Traditionally the central three areas of Theory of Computation are: automata, computability, and complexity.
+
+![alt text](Media/Lecture1/lec1fig1.png)
+
+I know some of you might be interested in mathematical stuffs but some of you here are out of choice. You may just want to obtain a degree in Computer Science, and a course in theory is required—God knows why. After all, isn’t theory arcane, boring, and worst of all, irrelevant?
+Well, theory can be sometimes boring and tiresome but it is fun to solve Automata problems (you'll see shortly).
+
+![alt text](Media/Lecture1/lec1fig2.png)
+
+Also, theory is not totally irrelevant and useless. Here's an idea of how the theory you learn here will be of useful for you in practice:
+* Designing a new programming language for a specialized application? 
+  You need **Context free grammar (CFG)**.
+* Dealing with string searching and pattern matching? 
+   You need **finite automata (DFA, NFA)** and **regular expressions** (Example: python regex)
+* You want to do Parts of Speech (POS) Tagging in Natural Language Processing (NLP)?
+   You need **CFG, Chomsky normal form,  parsing trees, Cocke–Younger–Kasami algorithm (CYK)** etc.
+* Markov chains are probabilistic counterpart of finite automata.
+
+If you think you will not work on any of those use cases, solving Automata can increase your problem solving skills as  .So, let's start learning.
+
+## What is Computability theory?
+Have you noticed that computer can not determine whether a mathematical statement is true or false? Similarly, there are countless mathematical functions that can not be computed by the computer. 
+In mathematical theory a lot of problems can be solved but in computability theory we prove whether these problems can be solved using computer or not. Basically, Computability is a subject where we  study and prove what the fundamental capabilities & limitations of computers are.
+
+## What is Automata theory?
+Automata is the definitions and properties of mathematical models of computation. It is the study of abstract machines/computers. An automaton is an abstract computer/machine. 
+Automata theory has applications in programming language design, compiler construction, text processing, software verification, and natural language processing etc.
+
+## Mathematical Notions and Terminologies
+### Sets and Tuples
+* A set is a group of objects represented as a unit. Example: S = {7, 21, 57}      
+* Those objects are called elements or members of that set.
+
+A set of Natural Numbers, N = {1, 2, 3…}	[Often 0 is considered Natural too]
+A set of Integers, Z = {…-3, -2, -1, 0, 1, 2, 3…}	
+A set of Real Numbers, R = {…-3, … , -2.5, … , 0, …, 1.12957…}
+The set with zero members is called the empty set and is written ∅.
+A set with two members is called an unordered pair.
+
+Example of a set,
+S = {n| n = m2 for some m ∈ N} 	
+   = {1, 4, 9, 16...}					
+Here, **|** symbol means **"such that"** and **∈** means **"element of"** or **"belongs to"**.              
+We can write, 7 ∈ {7, 21, 57} and 8 ∉ {7, 21, 57} 
+
+* Elements order does not matter in sets.
+* Finite Sequences are called tuples. Example: (7, 21, 57)
+* A set can contain tuples for example, S = {(a, b), (1, c)}
+
+#### Subset
+* A is a subset of B, written A ⊆ B, if every member of A also is a member of B. 
+* A is a proper subset of B, written A⊂B, if A is a subset of B and not equal to B.
+Example: 
+If  A = {1, 2, 3}; 	B = {1, 2, 3}    Then, A ⊆ B  and A⊂B
+If  A = {1, 2}; 	B = {1, 2, 3}    Then, A ⊆ B  and A⊂B
+
+### Strings and Languages
+* Symbol: a character
+  Example: a, c, Z, 0, 9, α, ক
+* Alphabet: a finite set of symbols 
+  *We generally use capital Greek letters capital sigma Σ or capital gamma Γ to designate alphabets*
+* String: a finite sequence of symbols over an alphabet set. 
+  *An empty string is represented using epsilon, ε*
+* Language: a set of strings
+Example: 
+Σ = {0,1} 			
+01001 is a string over Σ   		
+{0, 01, 10, 01001} is a language over Σ  
+
+### Regular operations
+Suppose, 
+A = {1, 3, 4}	  
+B = {3, 4, 6}   
+Universal set, U = {1, 2, 3, 4, 5, 6}
+ 
+**Compliment** of A = **A̅**= {2, 5, 6}
+**Union** of A and B = **A ∪ B** = {1, 3, 4, 6}
+**Intersection** of A and B = **A ∩ B** = {3, 4}
+
+Suppose,
+String P = "Bangla"
+String Q = "desh"
+
+**Concatanation** of P and Q = **P◦Q** = {xy| x ∈ P and y ∈ Q} = "Bangladesh"
+                        
+**Kleene Closure** of Q = Q* = = {x<sub>1</sub>x<sub>2</sub> . . . x<sub>k</sub>| k ≥ 0 and each x<sub>i</sub> ∈ A}.
+
 
 # Lecture 2
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
-lorem ipsum dolor sit amet, consectetur adip
+To be added.
 
 
