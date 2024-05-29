@@ -292,7 +292,9 @@ The example we saw above is a DFA.
 </p>
 </details>
 
-
+<p align="center">
+  <img src="Media\Lecture1\lec1fig6.png" width="500"/>
+</p>
 
 # Lecture 2
 To be added.
