@@ -207,6 +207,14 @@ The example we saw above is a DFA.
   * Multiple different transitions for a single symbol
   * Any state with no transitions or partial transitions
 
+
+<p align="center">
+  <img src="Media\Lecture1\Lec1fig7.jpg" width="500"/>
+  <img src="Media\Lecture1\lec1fig6.jpg" width="500"/>
+</p>
+
+Don't get overwhelmed already. If you are confused, no problem at all. We’ve wrapped up the theoretical stuff, and now it’s time for the fun part! We will dive into some examples and do some practices now and also in the next few classes. You will understand everything eventually.
+
 ### Example Problems
 
 <details>
@@ -248,6 +256,7 @@ The example we saw above is a DFA.
 </summary>
 <br>
 <p align="center">
+  Notice that L<sub>4</sub> is complement of the language set L<sub>3</sub> </br>
   <img src="Media\Lecture1\solve4.png" width="500"/>
 </p>
 </details>
@@ -294,10 +303,8 @@ The example we saw above is a DFA.
 
 
 <br><br>
-Don't get overwhelmed already. If you are still confused, no problem we will see some more examples and do more practices in the next few classes. You will understand everything eventually.
-<p align="center">
-  <img src="Media\Lecture1\lec1fig6.jpg" width="500"/>
-</p>
+
+
 
 # Lecture 2
 To be added.
