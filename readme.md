@@ -209,8 +209,8 @@ The example we saw above is a DFA.
 
 
 <p align="center">
-  <img src="Media\Lecture1\Lec1fig7.jpg" width="500"/>
-  <img src="Media\Lecture1\lec1fig6.jpg" width="500"/>
+  <img src="Media\Lecture1\Lec1fig7.jpg" width="350"/>
+  <img src="Media\Lecture1\lec1fig6.jpg" width="350"/>
 </p>
 
 Don't get overwhelmed already. If you are confused, no problem at all. We’ve wrapped up the theoretical stuff, and now it’s time for the fun part! We will dive into some examples and do some practices now and also in the next few classes. You will understand everything eventually.
