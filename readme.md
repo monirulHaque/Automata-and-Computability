@@ -292,8 +292,11 @@ The example we saw above is a DFA.
 </p>
 </details>
 
+
+<br><br>
+Don't get overwhelmed already. If you are still confused, no problem we will see some more examples and do more practices in the next few classes. You will understand everything eventually.
 <p align="center">
-  <img src="Media\Lecture1\lec1fig6.png" width="500"/>
+  <img src="Media\Lecture1\lec1fig6.jpg" width="500"/>
 </p>
 
 # Lecture 2
