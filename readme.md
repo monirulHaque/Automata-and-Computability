@@ -100,11 +100,11 @@ Also, theory is not totally irrelevant and useless. Here's an idea of how the th
 If you think you will not work on any of those use cases, solving Automata can increase your problem solving skills as  .So, let's start learning.
 
 ## What is Computability theory?
-Have you noticed that computer can not determine whether a mathematical statement is true or false? Similarly, there are countless mathematical functions that can not be computed by the computer. 
+Have you noticed that computer can not determine whether a mathematical statement is true or false? Similarly, there are countless mathematical functions that can not be computed by the computer. </br>
 In mathematical theory a lot of problems can be solved but in computability theory we prove whether these problems can be solved using computer or not. Basically, Computability is a subject where we  study and prove what the fundamental capabilities & limitations of computers are.
 
 ## What is Automata theory?
-Automata is the definitions and properties of mathematical models of computation. It is the study of abstract machines/computers. An automaton is an abstract computer/machine. 
+Automata is the definitions and properties of mathematical models of computation. It is the study of abstract machines/computers. An automaton is an abstract computer/machine. </br>
 Automata theory has applications in programming language design, compiler construction, text processing, software verification, and natural language processing etc.
 
 ## Essential Mathematical Notions and Terminologies
@@ -112,28 +112,28 @@ Automata theory has applications in programming language design, compiler constr
 * A set is a group of objects represented as a unit. Example: S = {7, 21, 57}      
 * Those objects are called elements or members of that set.
 
-A set of Natural Numbers, N = {1, 2, 3…}	[Often 0 is considered Natural too]
-A set of Integers, Z = {…-3, -2, -1, 0, 1, 2, 3…}	
-A set of Real Numbers, R = {…-3, … , -2.5, … , 0, …, 1.12957…}
-The set with zero members is called the empty set and is written ∅.
-A set with two members is called an unordered pair.
+A set of Natural Numbers, N = {1, 2, 3…}	[Often 0 is considered Natural too] </br>
+A set of Integers, Z = {…-3, -2, -1, 0, 1, 2, 3…}	</br>
+A set of Real Numbers, R = {…-3, … , -2.5, … , 0, …, 1.12957…} </br>
+The set with zero members is called the empty set and is written ∅. </br>
+A set with two members is called an unordered pair. </br>
 
-Example of a set,
-S = {n| n = m2 for some m ∈ N} 	
-   = {1, 4, 9, 16...}					
-Here, **|** symbol means **"such that"** and **∈** means **"element of"** or **"belongs to"**.              
-We can write, 7 ∈ {7, 21, 57} and 8 ∉ {7, 21, 57} 
+Example of a set, </br>
+S = {n| n = m2 for some m ∈ N} 	</br>
+   = {1, 4, 9, 16...}		</br>			
+Here, **|** symbol means **"such that"** and **∈** means **"element of"** or **"belongs to"**.    </br>          
+We can write, 7 ∈ {7, 21, 57} and 8 ∉ {7, 21, 57}  </br>
 
 * Elements order does not matter in sets.
 * Finite Sequences are called tuples. Example: (7, 21, 57)
 * A set can contain tuples for example, S = {(a, b), (1, c)}
 
 #### Subset
-* A is a subset of B, written A ⊆ B, if every member of A also is a member of B. 
-* A is a proper subset of B, written A⊂B, if A is a subset of B and not equal to B.
+* A is a subset of B, written A ⊆ B, if every member of A also is a member of B.  </br>
+* A is a proper subset of B, written A⊂B, if A is a subset of B and not equal to B. </br>
 Example: 
-If  A = {1, 2, 3}; 	B = {1, 2, 3}    Then, A ⊆ B  and A⊂B
-If  A = {1, 2}; 	B = {1, 2, 3}    Then, A ⊆ B  and A⊂B
+If  A = {1, 2, 3}; 	B = {1, 2, 3}    Then, A ⊆ B  and A⊂B </br>
+If  A = {1, 2}; 	B = {1, 2, 3}    Then, A ⊆ B  and A⊂B </br>
 
 ### Strings and Languages
 * Symbol: a character
