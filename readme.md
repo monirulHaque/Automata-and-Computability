@@ -23,10 +23,11 @@ This repository contains all of my lecture contents, practice sheets and other c
     - [Regular operations](#regular-operations)
   - [Regular Language and Finite Automata](#regular-language-and-finite-automata)
     - [DFA (Deterministic Finite Automata)](#dfa-deterministic-finite-automata)
-    - [Example Problems](#example-problems)
+    - [Example Problems of Regular Language to DFA](#example-problems-of-regular-language-to-dfa)
 - [Lecture 2](#lecture-2)
-  - [More Example problems of DFA](#more-example-problems-of-dfa)
+  - [More Example problems Regular Language to DFA](#more-example-problems-regular-language-to-dfa)
 - [Lecture 3](#lecture-3)
+  - [More Example problems Regular Language to DFA](#more-example-problems-regular-language-to-dfa-1)
 
 # Course Overview
 ### Course Outline
@@ -219,7 +220,7 @@ The example we saw above is a DFA.
 
 Don't get overwhelmed already. If you are confused, no problem at all. We’ve wrapped up the theoretical stuff, and now it’s time for the fun part! We will dive into some examples and do some practices now and also in the next few classes. You will understand everything eventually.
 
-### Example Problems
+### Example Problems of Regular Language to DFA
 
 <details>
 <summary>
@@ -252,7 +253,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 
 # Lecture 2
 
-## More Example problems of DFA
+## More Example problems Regular Language to DFA
 
 <details>
 <summary>
@@ -321,6 +322,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </summary>
 <br>
 <p align="center">
+  Notice that, we are transitioning to q3 when we are getting 0 at the beginning of the string. After getting 0 at the beginning of the string there is no way the sentence is going to be accecpted. So, q3 is acting like a <b>Trap state</b> or <b>Dead state</b> here. After transitioning to these kind of states there is no way to go to the accept state. </br>
   <img src="Media\Lecture2\solve9.png" width="500"/>
 </p>
 </details>
@@ -335,19 +337,20 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </p>
 </details>
 
+
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>11</sub> = {w ∈ {0, 1}*| w starts with 01 and ends with 10}</span>
+<span style="font-size:1.2rem">L<sub>11</sub> = {w ∈ {0, 1}*| length of w is two}</span>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve10.png" width="500"/>
+  <img src="Media\Lecture2\solve11.png" width="500"/>
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>12</sub> = {w ∈ {0, 1}*| length of w is two}</span>
+<span style="font-size:1.2rem">L<sub>12</sub> = {w ∈ {0, 1}*| length of w is at least two}</span>
 </summary>
 <br>
 <p align="center">
@@ -357,7 +360,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>13</sub> = {w ∈ {0, 1}*| length of w is at least two}</span>
+<span style="font-size:1.2rem">L<sub>13</sub> = {w ∈ {0, 1}*| length of w is at most two}</span>
 </summary>
 <br>
 <p align="center">
@@ -367,7 +370,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>14</sub> = {w ∈ {0, 1}*| length of w is at most two}</span>
+<span style="font-size:1.2rem">L<sub>14</sub> = {w ∈ {0, 1}*| w has even length}</span>
 </summary>
 <br>
 <p align="center">
@@ -377,7 +380,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>15</sub> = {w ∈ {0, 1}*| w has even length}</span>
+<span style="font-size:1.2rem">L<sub>15</sub> = {w ∈ {0, 1}*| w has odd length}</span>
 </summary>
 <br>
 <p align="center">
@@ -387,21 +390,27 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>16</sub> = {w ∈ {0, 1}*| w has odd length}</span>
+<span style="font-size:1.2rem">L<sub>16</sub> = {w ∈ {0, 1}*| length of w is divisible by 2}</span>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve15.png" width="500"/>
+  <img src="Media\Lecture2\solve16.png" width="500"/>
 </p>
 </details>
-
-
-
-
 
 </br></br>
 
 # Lecture 3
-To be added.
+
+## More Example problems Regular Language to DFA
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>17</sub> = {w ∈ {0, 1}*| w starts with 01 and ends with 10}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve17.png" width="500"/>
+</p>
+</details>
 
 
