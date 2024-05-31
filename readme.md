@@ -25,6 +25,7 @@ This repository contains all of my lecture contents, practice sheets and other c
     - [DFA (Deterministic Finite Automata)](#dfa-deterministic-finite-automata)
     - [Example Problems](#example-problems)
 - [Lecture 2](#lecture-2)
+  - [More Example problems of DFA](#more-example-problems-of-dfa)
 - [Lecture 3](#lecture-3)
 
 # Course Overview
@@ -71,6 +72,7 @@ This repository contains all of my lecture contents, practice sheets and other c
 - [Anisul Islam's Playlist](https://www.youtube.com/playlist?list=PLgH5QX0i9K3qw5pu16QgnKNj91Rnjoyd0)
 
 ### Consultation
+
 <p align="center">
   <img src="Media/Consultation.png"/>
 </p>
@@ -249,6 +251,9 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 
 
 # Lecture 2
+
+## More Example problems of DFA
+
 <details>
 <summary>
 <span style="font-size:1.2rem">L<sub>3</sub> = {w ∈ {0, 1}*| w has odd number of 1's}</span>
@@ -309,6 +314,90 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
   <img src="Media\Lecture1\solve8.png" width="500"/>
 </p>
 </details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>9</sub> = {w ∈ {0, 1}*| w starts with 1}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve9.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>10</sub> = {w ∈ {0, 1}*| w starts with 1 and ends with 0}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve10.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>11</sub> = {w ∈ {0, 1}*| w starts with 01 and ends with 10}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve10.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>12</sub> = {w ∈ {0, 1}*| length of w is two}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve12.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>13</sub> = {w ∈ {0, 1}*| length of w is at least two}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve13.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>14</sub> = {w ∈ {0, 1}*| length of w is at most two}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve14.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>15</sub> = {w ∈ {0, 1}*| w has even length}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve15.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>16</sub> = {w ∈ {0, 1}*| w has odd length}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve15.png" width="500"/>
+</p>
+</details>
+
+
+
+
 
 </br></br>
 
