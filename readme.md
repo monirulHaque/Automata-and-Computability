@@ -25,6 +25,7 @@ This repository contains all of my lecture contents, practice sheets and other c
     - [DFA (Deterministic Finite Automata)](#dfa-deterministic-finite-automata)
     - [Example Problems](#example-problems)
 - [Lecture 2](#lecture-2)
+- [Lecture 3](#lecture-3)
 
 # Course Overview
 ### Course Outline
@@ -70,8 +71,9 @@ This repository contains all of my lecture contents, practice sheets and other c
 - [Anisul Islam's Playlist](https://www.youtube.com/playlist?list=PLgH5QX0i9K3qw5pu16QgnKNj91Rnjoyd0)
 
 ### Consultation
-Email: ext.monirul.haque@bracu.ac.bd
-Timing Will be added after confirmation of my routine.
+<p align="center">
+  <img src="Media/Consultation.png"/>
+</p>
 
 # Lecture 1
 ## Theory of Computation
@@ -240,6 +242,13 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </p>
 </details>
 
+
+
+<br><br>
+
+
+
+# Lecture 2
 <details>
 <summary>
 <span style="font-size:1.2rem">L<sub>3</sub> = {w ∈ {0, 1}*| w has odd number of 1's}</span>
@@ -301,12 +310,9 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </p>
 </details>
 
+</br></br>
 
-<br><br>
-
-
-
-# Lecture 2
+# Lecture 3
 To be added.
 
 
