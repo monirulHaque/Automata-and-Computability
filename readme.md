@@ -25,9 +25,11 @@ This repository contains all of my lecture contents, practice sheets and other c
     - [DFA (Deterministic Finite Automata)](#dfa-deterministic-finite-automata)
     - [Example Problems of Regular Language to DFA](#example-problems-of-regular-language-to-dfa)
 - [Lecture 2](#lecture-2)
-  - [More Example problems Regular Language to DFA](#more-example-problems-regular-language-to-dfa)
+  - [More Example problems of Regular Language to DFA](#more-example-problems-of-regular-language-to-dfa)
 - [Lecture 3](#lecture-3)
-  - [DFA examples with Regular Operations](#dfa-examples-with-regular-operations)
+  - [Regular Operations Truth Table](#regular-operations-truth-table)
+  - [DFA examples with Regular Operations and Cross Product Constructions](#dfa-examples-with-regular-operations-and-cross-product-constructions)
+  - [DFA examples with Concatenation and Kleene Closure](#dfa-examples-with-concatenation-and-kleene-closure)
 - [Lecture 4](#lecture-4)
 
 # Course Overview
@@ -254,7 +256,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 
 # Lecture 2
 
-## More Example problems Regular Language to DFA
+## More Example problems of Regular Language to DFA
 
 <details>
 <summary>
@@ -403,7 +405,12 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 
 # Lecture 3
 
-## DFA examples with Regular Operations
+## Regular Operations Truth Table
+![alt text](image.png)
+
+For AND, OR and XOR operations we need to learn Cross Product Constructions of DFA
+
+## DFA examples with Regular Operations and Cross Product Constructions
 
 <details>
 <summary>
@@ -411,7 +418,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve17.png" width="500"/>
+  <img src="Media\Lecture3\solve17.png" width="500"/>
 </p>
 </details>
 
@@ -421,7 +428,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve17.png" width="500"/>
+  <img src="Media\Lecture3\solve18.png" width="500"/>
 </p>
 </details>
 
@@ -431,7 +438,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve17.png" width="500"/>
+  <img src="Media\Lecture3\solve19.png" width="500"/>
 </p>
 </details>
 
@@ -441,7 +448,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve17.png" width="500"/>
+  <img src="Media\Lecture3\solve20.png" width="500"/>
 </p>
 </details>
 
@@ -451,60 +458,76 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve17.png" width="500"/>
+  <img src="Media\Lecture3\solve21.png" width="500"/>
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>22</sub> = {w ∈ {0, 1}*| 0<sup>n</sup> where n >= 0}</span>
+<span style="font-size:1.2rem">L<sub>22</sub> = L<sub>17</sub> ⊕ L<sub>18</sub></span>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve17.png" width="500"/>
+  <img src="Media\Lecture3\solve22.png" width="500"/>
+</p>
+</details>
+
+## DFA examples with Concatenation and Kleene Closure
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>23</sub> = {w ∈ {0, 1}*| 0<sup>n</sup> where n >= 0}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture3\solve23.png" width="500"/>
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>23</sub> = {w ∈ {0, 1}*| 1<sup>m</sup> where m is odd}</span>
+<span style="font-size:1.2rem">L<sub>24</sub> = {w ∈ {0, 1}*| 1<sup>m</sup> where m is odd}</span>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve17.png" width="500"/>
+  <img src="Media\Lecture3\solve24.png" width="500"/>
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>24</sub> = L<sub>22</sub> ◦ L<sub>23</sub> </span>
+<span style="font-size:1.2rem">L<sub>25</sub> = L<sub>23</sub> ◦ L<sub>24</sub> </span>
 </summary>
 <br>
+
+<p>In other words, the question means L<sub>25</sub> = {w ∈ {0, 1}*| 0<sup>n</sup>1<sup>m</sup> where n >=0 and m is odd}</p>
+
 <p align="center">
-  <img src="Media\Lecture2\solve17.png" width="500"/>
+  <img src="Media\Lecture3\solve25.png" width="500"/>
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>25</sub> = {w ∈ {0, 1}*| w is 01}</span>
+<span style="font-size:1.2rem">L<sub>26</sub> = {w ∈ {0, 1}*| w is 01}</span>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve17.png" width="500"/>
+  <img src="Media\Lecture3\solve26.png" width="500"/>
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>26</sub> = L<sub>25</sub>*</span>
+<span style="font-size:1.2rem">L<sub>27</sub> = L<sub>24</sub>*</span>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve17.png" width="500"/>
+  <img src="Media\Lecture3\solve27.png" width="500"/>
 </p>
 </details>
 
 </br> </br>
 
 # Lecture 4
+To be added
