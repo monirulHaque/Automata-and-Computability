@@ -375,7 +375,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve14.png" width="500"/>
+  <img src="Media\Lecture2\solve14.png" width="300"/>
 </p>
 </details>
 
@@ -385,7 +385,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture2\solve15.png" width="500"/>
+  <img src="Media\Lecture2\solve15.png" width="300"/>
 </p>
 </details>
 
