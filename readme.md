@@ -391,7 +391,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>16</sub> = {w ∈ {0, 1}*| length of w is divisible by 2}</span>
+<span style="font-size:1.2rem">L<sub>16</sub> = {w ∈ {0, 1}*| length of w is multiple of 2}</span>
 </summary>
 <br>
 <p align="center">
