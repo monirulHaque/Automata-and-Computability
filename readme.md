@@ -27,7 +27,8 @@ This repository contains all of my lecture contents, practice sheets and other c
 - [Lecture 2](#lecture-2)
   - [More Example problems Regular Language to DFA](#more-example-problems-regular-language-to-dfa)
 - [Lecture 3](#lecture-3)
-  - [More Example problems Regular Language to DFA](#more-example-problems-regular-language-to-dfa-1)
+  - [DFA examples with Regular Operations](#dfa-examples-with-regular-operations)
+- [Lecture 4](#lecture-4)
 
 # Course Overview
 ### Course Outline
@@ -402,10 +403,11 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 
 # Lecture 3
 
-## More Example problems Regular Language to DFA
+## DFA examples with Regular Operations
+
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>17</sub> = {w ∈ {0, 1}*| w starts with 01 and ends with 10}</span>
+<span style="font-size:1.2rem">L<sub>17</sub> = {w ∈ {0, 1}*| w starts with 01}</span>
 </summary>
 <br>
 <p align="center">
@@ -413,4 +415,96 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </p>
 </details>
 
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>18</sub> = {w ∈ {0, 1}*| w ends with 10}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve17.png" width="500"/>
+</p>
+</details>
 
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>19</sub> = L̅<sub>18</sub></span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve17.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>20</sub> = L<sub>17</sub> ∩ L<sub>18</sub></span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve17.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>21</sub> = L<sub>17</sub> U L<sub>18</sub></span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve17.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>22</sub> = {w ∈ {0, 1}*| 0<sup>n</sup> where n >= 0}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve17.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>23</sub> = {w ∈ {0, 1}*| 1<sup>m</sup> where m is odd}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve17.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>24</sub> = L<sub>22</sub> ◦ L<sub>23</sub> </span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve17.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>25</sub> = {w ∈ {0, 1}*| w is 01}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve17.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>26</sub> = L<sub>25</sub>*</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture2\solve17.png" width="500"/>
+</p>
+</details>
+
+</br> </br>
+
+# Lecture 4
