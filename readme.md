@@ -406,7 +406,7 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 # Lecture 3
 
 ## Regular Operations Truth Table
-![alt text](image.png)
+![alt text](Media\Lecture3\lec3fig1.png)
 
 For AND, OR and XOR operations we need to learn Cross Product Constructions of DFA
 
@@ -414,11 +414,11 @@ For AND, OR and XOR operations we need to learn Cross Product Constructions of D
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>17</sub> = {w ∈ {0, 1}*| w starts with 01}</span>
+<span style="font-size:1.2rem">L<sub>17</sub> = {w ∈ {0, 1}*| w has 1}</span>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture3\solve17.png" width="500"/>
+  <img src="Media\Lecture3\solve17.png" width="350"/>
 </p>
 </details>
 
