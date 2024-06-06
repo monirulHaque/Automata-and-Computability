@@ -426,7 +426,7 @@ For AND, OR and XOR operations we need to learn Cross Product Constructions of D
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>18</sub> = {w ∈ {0, 1}*| w ends with 10}</span>
+<span style="font-size:1.2rem">L<sub>18</sub> = {w ∈ {0, 1}*| w ends with 01}</span>
 </summary>
 <br>
 <p align="center">
