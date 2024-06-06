@@ -450,7 +450,17 @@ For AND, OR and XOR operations we need to learn Cross Product Constructions of D
 </summary>
 <br>
 <p align="center">
+  <p>For this kind of question we can do cross productions in DFAs to create a new DFA. When we apply cross production between two DFAs (Suppose D1 and D2). The number of states in the new DFA will be, (number of states in D1 * number of states in D2). In our example we have 2 states in L<sub>17</sub> and 3 states in L<sub>18</sub>; so, the cross production will have 3*2 = 6 states. </p>
+  <p>In L<sub>17</sub> From A state the transition of 0 goes to A and in L<sub>18</sub> From X state the transition of 0 goes to Y. So, from the new state AX the transition of 0 will go to AY. Similarly, we fillup the transition table.</p>
   <img src="Media\Lecture3\solve20fig1.png" width="500"/>
+</p>
+
+<p>In L<sub>17</sub> start state was A and in L<sub>18</sub> start state is X. So, the new Start state will be AX. </p>
+<p>
+For final state, </br>
+In AND/Intersection (∩), only the states in Cross Product Construction DFA that contain the name of the final state of the both DFAs. In this case, final state should be <b>BZ</b> as the name BZ has both B and Z in the name. </br>
+In OR/Union (U), only the states in Cross Product Construction DFA that contain the name of the final state of any of the previous DFAs. In this case, final state should be <b>AZ, BZ, BX, BY</b> as all the states have either B or Z in their names. </br>
+In XOR (⊕), We will just keep the final states of OR but we will get rid of the final states of AND. So, for this cross production the final states should be, <b>AZ, BX, BY</b>.</br>
 </p>
 <p align="center">
   <img src="Media\Lecture3\solve20.png" width="500"/>
