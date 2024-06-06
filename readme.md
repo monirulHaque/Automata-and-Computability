@@ -406,7 +406,9 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 # Lecture 3
 
 ## Regular Operations Truth Table
-![alt text](Media\Lecture3\lec3fig1.png)
+<p align="center">
+  <img src="Media\Lecture3\lec3fig1.png" width="500"/>
+</p>
 
 For AND, OR and XOR operations we need to learn Cross Product Constructions of DFA
 
