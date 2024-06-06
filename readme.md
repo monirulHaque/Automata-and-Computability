@@ -31,6 +31,7 @@ This repository contains all of my lecture contents, practice sheets and other c
   - [DFA examples with Regular Operations and Cross Product Constructions](#dfa-examples-with-regular-operations-and-cross-product-constructions)
   - [DFA examples with Concatenation and Kleene Closure](#dfa-examples-with-concatenation-and-kleene-closure)
 - [Lecture 4](#lecture-4)
+  - [NFA (Non-deterministic Finite Automata)](#nfa-non-deterministic-finite-automata)
 
 # Course Overview
 ### Course Outline
@@ -545,4 +546,12 @@ In XOR (⊕), We will just keep the accept states of OR but we will get rid of t
 </br> </br>
 
 # Lecture 4
-To be added
+## NFA (Non-deterministic Finite Automata)
+<p>NFA is basically DFA with less restrictions. Remember the [DFA properties](#dfa-deterministic-finite-automata)? NFAs are more flexible and expressive, allowing multiple transitions and epsilon transitions, while DFAs are more restrictive.</p>
+
+<p>Consider the example of previous class L<sub>25</sub>. In NFA we can just add an epsilon transition from the accept states of L<sub>23</sub> to L<sub>24</sub>'s starting state.
+</p>
+
+<p align="center">
+  <img src="Media\Lecture4\lec4fig1.png" width="400"/>
+</p>
