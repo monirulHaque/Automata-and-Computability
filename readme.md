@@ -56,7 +56,7 @@ This repository contains all of my lecture contents, practice sheets and other c
 | ---------------------- | -- |
 | Assignments            | 10 |
 | Quiz (Best 3 out of 4) | 20 |
-| Surprise Test          | 5  |
+| Surprise Test (3-4)    | 5  |
 | Mid                    | 30 |
 | Final                  | 35 |
 
