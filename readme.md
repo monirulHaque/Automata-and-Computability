@@ -457,10 +457,10 @@ For AND, OR and XOR operations we need to learn Cross Product Constructions of D
 
 <p>In L<sub>17</sub> start state was A and in L<sub>18</sub> start state is X. So, the new Start state will be AX. </p>
 <p>
-For final state, </br>
-In AND/Intersection (∩), only the states in Cross Product Construction DFA that contain the name of the final state of the both DFAs. In this case, final state should be <b>BZ</b> as the name BZ has both B and Z in the name. </br>
-In OR/Union (U), only the states in Cross Product Construction DFA that contain the name of the final state of any of the previous DFAs. In this case, final state should be <b>AZ, BZ, BX, BY</b> as all the states have either B or Z in their names. </br>
-In XOR (⊕), We will just keep the final states of OR but we will get rid of the final states of AND. So, for this cross production the final states should be, <b>AZ, BX, BY</b>.</br>
+For accept state, </br>
+In AND/Intersection (∩), only the states in Cross Product Construction DFA that contain the name of the accept state of the both DFAs. In this case, accept state should be <b>BZ</b> as the name BZ has both B and Z in the name. </br>
+In OR/Union (U), only the states in Cross Product Construction DFA that contain the name of the accept state of any of the previous DFAs. In this case, accept state should be <b>AZ, BZ, BX, BY</b> as all the states have either B or Z in their names. </br>
+In XOR (⊕), We will just keep the accept states of OR but we will get rid of the accept states of AND. So, for this cross production the accept states should be, <b>AZ, BX, BY</b>.</br>
 </p>
 <p align="center">
   <img src="Media\Lecture3\solve20.png" width="500"/>
