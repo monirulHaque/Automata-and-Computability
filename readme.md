@@ -450,6 +450,9 @@ For AND, OR and XOR operations we need to learn Cross Product Constructions of D
 </summary>
 <br>
 <p align="center">
+  <img src="Media\Lecture3\solve20fig1.png" width="500"/>
+</p>
+<p align="center">
   <img src="Media\Lecture3\solve20.png" width="500"/>
 </p>
 </details>
@@ -521,7 +524,7 @@ For AND, OR and XOR operations we need to learn Cross Product Constructions of D
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>27</sub> = L<sub>24</sub>*</span>
+<span style="font-size:1.2rem">L<sub>27</sub> = L<sub>26</sub>*</span>
 </summary>
 <br>
 <p align="center">
