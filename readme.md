@@ -549,9 +549,23 @@ In XOR (⊕), We will just keep the accept states of OR but we will get rid of t
 ## NFA (Non-deterministic Finite Automata)
 <p>NFA is basically DFA with less restrictions. Remember the [DFA properties](#dfa-deterministic-finite-automata)? NFAs are more flexible and expressive, allowing multiple transitions and epsilon transitions, while DFAs are more restrictive.</p>
 
-<p>Consider the example of previous class L<sub>25</sub>. In NFA we can just add an epsilon transition from the accept states of L<sub>23</sub> to L<sub>24</sub>'s starting state.
+<p>Consider the example of previous class L<sub>25</sub>. In NFA we can just add an epsilon transition from the accept states of L<sub>23</sub> to L<sub>24</sub>'s starting state. For NFA, this always works on language with concatanations. 
 </p>
 
 <p align="center">
   <img src="Media\Lecture4\lec4fig1.png" width="400"/>
+</p>
+
+<p>Consider the example of previous class L<sub>26</sub>. In NFA we can just show that the accepted string will be 01. No need to show trap states.
+</p>
+
+<p align="center">
+  <img src="Media\Lecture4\lec4fig2.png" width="400"/>
+</p>
+
+<p>Consider the example of previous class L<sub>27</sub>. In NFA we can just connect the accept state with the starting state. For NFA, this always works with any language with Kleene Closure .
+</p>
+
+<p align="center">
+  <img src="Media\Lecture4\lec4fig3.png" width="400"/>
 </p>
