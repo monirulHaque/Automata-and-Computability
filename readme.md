@@ -578,3 +578,49 @@ In XOR (⊕), We will just keep the accept states of OR but we will get rid of t
 </ul>
 </p>
 
+## NFA Examples
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>1</sub> = {w ∈ {0, 1}*| w starts with 0}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture4\solve1.png" width="500"/>
+</p>
+</details>
+
+<summary>
+<span style="font-size:1.2rem">L<sub>2</sub> = {w ∈ {0, 1}*| w ends with 1}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture4\solve2.png" width="500"/>
+</p>
+</details>
+
+<summary>
+<span style="font-size:1.2rem">L<sub>3</sub> = {w ∈ {0, 1}*| w has substring 101}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture4\solve3.png" width="500"/>
+</p>
+</details>
+
+<summary>
+<span style="font-size:1.2rem">L<sub>4</sub> = {w ∈ {0, 1}*| w has subsequence 110}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture4\solve3.png" width="500"/>
+</p>
+</details>
+
+<summary>
+<span style="font-size:1.2rem">L<sub>4</sub> = {w ∈ {0, 1}*| length of w is 3}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture4\solve3.png" width="500"/>
+</p>
+</details>
