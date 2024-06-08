@@ -547,7 +547,7 @@ In XOR (⊕), We will just keep the accept states of OR but we will get rid of t
 
 # Lecture 4
 ## NFA (Non-deterministic Finite Automata)
-<p>NFA is basically DFA with less restrictions. Remember the [DFA properties](#dfa-deterministic-finite-automata)? NFAs are more flexible and expressive, allowing multiple transitions and epsilon transitions, while DFAs are more restrictive.</p>
+<p>NFA is basically DFA with less restrictions. Remember the properties of [DFA (Deterministic Finite Automata)](#dfa-deterministic-finite-automata)? NFAs are more flexible and expressive, allowing multiple transitions and epsilon transitions, while DFAs are more restrictive.</p>
 
 <p>Consider the example of previous class L<sub>25</sub>. In NFA we can just add an epsilon transition from the accept states of L<sub>23</sub> to L<sub>24</sub>'s starting state. For NFA, this always works on language with concatanations. 
 </p>
@@ -569,3 +569,12 @@ In XOR (⊕), We will just keep the accept states of OR but we will get rid of t
 <p align="center">
   <img src="Media\Lecture4\lec4fig3.png" width="400"/>
 </p>
+
+<p>NFA is easy to construct for the following Regular Operations
+<ul>
+    <li>OR/Union (U)</li>
+    <li>Concatanation (◦)</li>
+    <li>Kleene Closure (*)</li>
+</ul>
+</p>
+
