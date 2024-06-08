@@ -547,7 +547,14 @@ In XOR (⊕), We will just keep the accept states of OR but we will get rid of t
 
 # Lecture 4
 ## NFA (Non-deterministic Finite Automata)
-<p>NFA is basically DFA with less restrictions. Remember the properties of [DFA (Deterministic Finite Automata)](#dfa-deterministic-finite-automata)? NFAs are more flexible and expressive, allowing multiple transitions and epsilon transitions, while DFAs are more restrictive.</p>
+<p>NFA is basically DFA with less restrictions. Remember the properties of [DFA (Deterministic Finite Automata)](#dfa-deterministic-finite-automata) ? NFAs are more flexible and expressive, allowing multiple transitions and epsilon transitions, while DFAs are more restrictive.
+What NFAs can have that DFAs can't: </br>
+<ul>
+    <li>Empty/null/epsilon (ε) transitions</li>
+    <li>Multiple different transitions for a single symbol</li>
+    <li>Any state with no transitions or partial transitions</li>
+</ul>
+</p>
 
 <p>Consider the example of previous class L<sub>25</sub>. In NFA we can just add an epsilon transition from the accept states of L<sub>23</sub> to L<sub>24</sub>'s starting state. For NFA, this always works on language with concatanations. 
 </p>
@@ -589,6 +596,7 @@ In XOR (⊕), We will just keep the accept states of OR but we will get rid of t
 </p>
 </details>
 
+<details>
 <summary>
 <span style="font-size:1.2rem">L<sub>2</sub> = {w ∈ {0, 1}*| w ends with 1}</span>
 </summary>
@@ -598,6 +606,17 @@ In XOR (⊕), We will just keep the accept states of OR but we will get rid of t
 </p>
 </details>
 
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>3</sub> = L<sub>1</sub> U L<sub>2</sub></span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture4\solve2.png" width="500"/>
+</p>
+</details>
+
+<details>
 <summary>
 <span style="font-size:1.2rem">L<sub>3</sub> = {w ∈ {0, 1}*| w has substring 101}</span>
 </summary>
@@ -607,20 +626,22 @@ In XOR (⊕), We will just keep the accept states of OR but we will get rid of t
 </p>
 </details>
 
+<details>
 <summary>
-<span style="font-size:1.2rem">L<sub>4</sub> = {w ∈ {0, 1}*| w has subsequence 110}</span>
+<span style="font-size:1.2rem">L<sub>4</sub> = {w ∈ {0, 1}*| w has subsequence 101}</span>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture4\solve3.png" width="500"/>
+  <img src="Media\Lecture4\solve4.png" width="500"/>
 </p>
 </details>
 
+<details>
 <summary>
 <span style="font-size:1.2rem">L<sub>4</sub> = {w ∈ {0, 1}*| length of w is 3}</span>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture4\solve3.png" width="500"/>
+  <img src="Media\Lecture4\solve5.png" width="500"/>
 </p>
 </details>
