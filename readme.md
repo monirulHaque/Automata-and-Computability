@@ -77,7 +77,7 @@ This repository contains all of my lecture contents, practice sheets and other c
 - [Professor Harry Potters Playlist](https://www.youtube.com/playlist?list=PLbtzT1TYeoMjNOGEiaRmm_vMIwUAidnQz)
 - [Anisul Islam's Playlist](https://www.youtube.com/playlist?list=PLgH5QX0i9K3qw5pu16QgnKNj91Rnjoyd0)
 
-*Also Check out the [Resources](Resources/README.md) for some awesome tools*
+*Also Check out the [Resources](Resources/) for some awesome tools*
 
 ### Consultation
 
