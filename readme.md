@@ -32,6 +32,7 @@ This repository contains all of my lecture contents, practice sheets and other c
   - [DFA examples with Concatenation and Kleene Closure](#dfa-examples-with-concatenation-and-kleene-closure)
 - [Lecture 4](#lecture-4)
   - [NFA (Non-deterministic Finite Automata)](#nfa-non-deterministic-finite-automata)
+  - [NFA Examples](#nfa-examples)
 
 # Course Overview
 ### Course Outline
@@ -75,6 +76,8 @@ This repository contains all of my lecture contents, practice sheets and other c
 - [CS103 Stanford University Lecture Slides](https://web.stanford.edu/class/archive/cs/cs103/cs103.1184/)
 - [Professor Harry Potters Playlist](https://www.youtube.com/playlist?list=PLbtzT1TYeoMjNOGEiaRmm_vMIwUAidnQz)
 - [Anisul Islam's Playlist](https://www.youtube.com/playlist?list=PLgH5QX0i9K3qw5pu16QgnKNj91Rnjoyd0)
+
+*Also Check out the [Resources](Resources/README.md) for some awesome tools*
 
 ### Consultation
 
