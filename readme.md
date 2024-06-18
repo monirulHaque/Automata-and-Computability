@@ -1,4 +1,8 @@
-pThis repository contains all of my lecture contents, practice sheets and other course materials of the course Automata and Computability.
+This repository contains all of my lecture contents, practice sheets and other course materials of the course Automata and Computability. </br>
+
+Note that, </br>
+- You might still need to attend classes to fully understand the thought process behind the solutions
+- You can click on the examples to view the solutions. 
 
 ------------------
 
@@ -35,6 +39,8 @@ pThis repository contains all of my lecture contents, practice sheets and other 
     - [How Does An NFA Machine Accept Strings?](#how-does-an-nfa-machine-accept-strings)
     - [Why Do We Need NFA?](#why-do-we-need-nfa)
     - [NFA Examples](#nfa-examples)
+- [Lecture 5](#lecture-5)
+  - [More NFA Examples](#more-nfa-examples)
 
 # Course Overview
 ### Course Outline
@@ -728,5 +734,17 @@ Another solution could be,
 <br>
 <p align="center">
   <img src="Media\Lecture4\solve6.png" width="500"/>
+</p>
+</details>
+
+# Lecture 5
+## More NFA Examples
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>7</sub> = {w ∈ {0, 1}*| length of w is 3}</span>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture5\solve7.png" width="500"/>
 </p>
 </details>
