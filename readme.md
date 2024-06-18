@@ -2,7 +2,7 @@ This repository contains all of my lecture contents, practice sheets and other c
 
 Note that, </br>
 - You might still need to attend classes to fully understand the thought process behind the solutions
-- You can click on the examples to view the solutions. 
+- You can click on the examples to view the solutions
 
 ------------------
 
@@ -739,12 +739,73 @@ Another solution could be,
 
 # Lecture 5
 ## More NFA Examples
+
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>7</sub> = {w ∈ {0, 1}*| length of w is 3}</span>
+<span style="font-size:1.2rem">L<sub>7</sub> = {w ∈ {0, 1}*| w has substring 01}</span>
 </summary>
 <br>
 <p align="center">
   <img src="Media\Lecture5\solve7.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>8</sub> = {w ∈ {0, 1}*| w starts with 0}</span>   <i>[same as L<sub>1</sub> but showing it for the example L<sub>9</sub>]</i>
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture4\solve1.png" width="300"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>9</sub> = {w ∈ {0, 1}*| L<sub>7</sub> • L<sub>8</sub> }</span>   
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture5\solve9.png" width="300"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>10</sub> = {w ∈ {0, 1}*| w has 1}</span>   
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture5\solve10.png" width="300"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>11</sub> = {w ∈ {0, 1}*|  w starts with 01}</span>   
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture5\solve11.png" width="300"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>12</sub> = {w ∈ {0, 1}*|  w starts with 11}</span>   
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture5\solve12.png" width="300"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>13</sub> = L<sub>10</sub> U L<sub>11</sub> U L<sub>12</sub> &nbsp; &nbsp; OR &nbsp; &nbsp;  L<sub>13</sub> = L<sub>10</sub> | L<sub>11</sub> | L<sub>12</sub></span>   
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture5\solve13.png" width="300"/>
 </p>
 </details>
