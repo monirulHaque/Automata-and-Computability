@@ -1,4 +1,4 @@
-This repository contains all of my lecture contents, practice sheets and other course materials of the course Automata and Computability.
+pThis repository contains all of my lecture contents, practice sheets and other course materials of the course Automata and Computability.
 
 ------------------
 
@@ -32,7 +32,9 @@ This repository contains all of my lecture contents, practice sheets and other c
   - [DFA examples with Concatenation and Kleene Closure](#dfa-examples-with-concatenation-and-kleene-closure)
 - [Lecture 4](#lecture-4)
   - [NFA (Non-deterministic Finite Automata)](#nfa-non-deterministic-finite-automata)
-  - [NFA Examples](#nfa-examples)
+    - [How Does An NFA Machine Accept Strings?](#how-does-an-nfa-machine-accept-strings)
+    - [Why Do We Need NFA?](#why-do-we-need-nfa)
+    - [NFA Examples](#nfa-examples)
 
 # Course Overview
 ### Course Outline
@@ -566,6 +568,12 @@ What NFAs can have that DFAs can't: </br>
   <img src="Media\Lecture4\lec4fig1.png" width="400"/>
 </p>
 
+Here, q1 and D are trap/dead states. As NFA's can have states with no or partial transitions, we can simply remove them and it would still be a valid NFA.
+
+<p align="center">
+  <img src="Media\Lecture4\lec4fig1_1.png" width="300"/>
+</p>
+
 <p>Consider the example of previous class L<sub>26</sub>. In NFA we can just show that the accepted string will be 01. No need to show trap states.
 </p>
 
@@ -580,7 +588,38 @@ What NFAs can have that DFAs can't: </br>
   <img src="Media\Lecture4\lec4fig3.png" width="400"/>
 </p>
 
-<p><b>NFA is easy to construct for the following Regular Operations
+
+
+### How Does An NFA Machine Accept Strings?
+Consider the following NFA example,
+<p align="center">
+ <img src="Media/Lecture4/lec4howexample.png" width="700" />
+</p>
+
+Now, consider a string 010110 as an input for the above NFA. The NFA will read every symbols of the character and concurrently stay in multiple states. After reading all the characters if it stays on at least one accept state of the NFA, the string will be accepted.
+
+<p align="center">
+ <img src="Media/Lecture4/lec4howexamplesolution.png" width="500" />
+</p>
+
+### Why Do We Need NFA?
+According to NFA's properties, NFA's are just DFA's with less restrictions and **every DFA is an NFA but every NFA is not DFA**. DFA is a subset of NFA. So, can't we just construct DFA's when we are asked to construct NFA's? Why bother learning NFA? </br> 
+Consider the following regular language,
+<p align="center">L={w ∈ {0, 1}*| w contains a 1 in the
+third position from the end}</p>
+
+NFA solution for that regular language should be,
+
+<p align="center">
+ <img src="Media/Lecture4/lec4whynfa1.png" width="700" />
+</p>
+
+But the DFA solution for that regular language is much more complicated and tough to construct,
+
+<p align="center">
+ <img src="Media/Lecture4/lec4whynfa2.png" width="700" />
+</p>
+<p>Also, NFA is easy to construct for the following Regular Operations
 <ul>
     <li>OR/Union (U) 
       <p align="center">
@@ -598,16 +637,17 @@ What NFAs can have that DFAs can't: </br>
     </p>
     </li>
 </ul>
-</b></p>
+</p>
 
-## NFA Examples
+But doesn't NFA concurrently compute the strings, which is costly in real life? </br>Well, we can always convert an NFA to DFA which is very easy. We'll learn NFA to DFA conversion in Lecture 6. 
+### NFA Examples
 <details>
 <summary>
 <span style="font-size:1.2rem">L<sub>1</sub> = {w ∈ {0, 1}*| w starts with 0}</span>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture4\solve1.png" width="500"/>
+  <img src="Media\Lecture4\solve1.png" width="300"/>
 </p>
 </details>
 
@@ -617,7 +657,7 @@ What NFAs can have that DFAs can't: </br>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture4\solve2.png" width="500"/>
+  <img src="Media\Lecture4\solve2.png" width="300"/>
 </p>
 </details>
 
@@ -627,23 +667,37 @@ What NFAs can have that DFAs can't: </br>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture4\solve2.png" width="500"/>
-</p>
-</details>
-
-<details>
-<summary>
-<span style="font-size:1.2rem">L<sub>3</sub> = {w ∈ {0, 1}*| w has substring 101}</span>
-</summary>
-<br>
-<p align="center">
   <img src="Media\Lecture4\solve3.png" width="500"/>
 </p>
 </details>
 
+
+</br>
+<b>Substring vs Subsequence</b> </br>
+Substring is a continuous part or subpart of a string. </br>
+Example: the string "ana" is a substring (and subsequence) of banana at two different offsets:
+
+```
+banana
+ |||||
+ ana||
+   |||
+   ana
+```
+On the other hand, subsequence is the part of a string or sequence, that might be continuous or not but the order of the elements is maintained. </br>
+Example: the string "anna" is a subsequence of the string "banana":
+
+```
+banana
+ || ||
+ an na
+```
+
+</br>
+
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>4</sub> = {w ∈ {0, 1}*| w has subsequence 101}</span>
+<span style="font-size:1.2rem">L<sub>4</sub> = {w ∈ {0, 1}*| w has substring 101}</span>
 </summary>
 <br>
 <p align="center">
@@ -653,10 +707,26 @@ What NFAs can have that DFAs can't: </br>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>4</sub> = {w ∈ {0, 1}*| length of w is 3}</span>
+<span style="font-size:1.2rem">L<sub>5</sub> = {w ∈ {0, 1}*| w has subsequence 101}</span>
+</summary>
+<br>
+</br>
+<p align="center">
+  <img src="Media\Lecture4\solve5_1.png" width="500"/>
+</p>
+
+Another solution could be,
+<p align="center">
+  <img src="Media\Lecture4\solve5_2.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>6</sub> = {w ∈ {0, 1}*| length of w is 3}</span>
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture4\solve5.png" width="500"/>
+  <img src="Media\Lecture4\solve6.png" width="500"/>
 </p>
 </details>
