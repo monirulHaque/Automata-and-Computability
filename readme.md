@@ -550,7 +550,7 @@ In XOR (⊕), We will just keep the accept states of OR but we will get rid of t
 
 # Lecture 4
 ## NFA (Non-deterministic Finite Automata)
-<p>NFA is basically DFA with less restrictions. Remember the properties of [DFA (Deterministic Finite Automata)](#dfa-deterministic-finite-automata) ? NFAs are more flexible and expressive, allowing multiple transitions and epsilon transitions, while DFAs are more restrictive.
+<p>NFA is basically DFA with less restrictions. Remember the properties of <a href="#dfa-deterministic-finite-automata">DFA</a>? NFAs are more flexible and expressive, allowing multiple transitions and epsilon transitions, while DFAs are more restrictive.
 What NFAs can have that DFAs can't: </br>
 <ul>
     <li>Empty/null/epsilon (ε) transitions</li>
@@ -580,13 +580,25 @@ What NFAs can have that DFAs can't: </br>
   <img src="Media\Lecture4\lec4fig3.png" width="400"/>
 </p>
 
-<p>NFA is easy to construct for the following Regular Operations
+<p><b>NFA is easy to construct for the following Regular Operations
 <ul>
-    <li>OR/Union (U)</li>
-    <li>Concatanation (◦)</li>
-    <li>Kleene Closure (*)</li>
+    <li>OR/Union (U) 
+      <p align="center">
+        <img src="Media\Lecture4\lec4Union.png" width="400"/>
+      </p>
+    </li>
+    <li>Concatanation (◦)
+    <p align="center">
+        <img src="Media/Lecture4/lec4concatanation.png" width="400"/>
+    </p>
+    </li>
+    <li>Kleene Closure (*)
+    <p align="center">
+        <img src="Media/Lecture4/lec4star.png" width="400"/>
+    </p>
+    </li>
 </ul>
-</p>
+</b></p>
 
 ## NFA Examples
 <details>
