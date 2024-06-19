@@ -772,7 +772,7 @@ Another solution could be,
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture5\solve9.png" width="300"/>
+  <img src="Media\Lecture5\solve9.png" width="700"/>
 </p>
 </details>
 
@@ -792,17 +792,17 @@ Another solution could be,
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture5\solve11.png" width="300"/>
+  <img src="Media\Lecture5\solve11.png" width="400"/>
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>12</sub> = {w ∈ {0, 1}*|  w starts with 11}</span>   
+<span style="font-size:1.2rem">L<sub>12</sub> = {w ∈ {0, 1}*|  w ends with 11}</span>   
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture5\solve12.png" width="300"/>
+  <img src="Media\Lecture5\solve12.png" width="400"/>
 </p>
 </details>
 
@@ -812,7 +812,7 @@ Another solution could be,
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture5\solve13.png" width="300"/>
+  <img src="Media\Lecture5\solve13.png" width="500"/>
 </p>
 </details>
 
