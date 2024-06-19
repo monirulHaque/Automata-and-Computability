@@ -43,6 +43,8 @@ Note that, </br>
   - [More NFA Examples](#more-nfa-examples)
 - [Lecture 6](#lecture-6)
   - [NFA to DFA](#nfa-to-dfa)
+    - [Epsilon-NFA to NFA to DFA](#epsilon-nfa-to-nfa-to-dfa)
+  - [Regular Expression](#regular-expression)
 
 # Course Overview
 ### Course Outline
@@ -78,6 +80,7 @@ Note that, </br>
 - Hopcroft, J., R. Motwani and J.D. Ullman *Introduction to automata theory, languages and computation.* [Link](https://drive.google.com/file/d/1TmGgNfuc97OqM3BYJSRtz1qDKX81iy2-/view?usp=drive_link)
 - Kozen, D.C. *Automata and Computability*. [Link](https://vishub.org/officedocs/13770.pdf)
 #### Other Resources
+- **[Kabbya Sir's Class Recordings](https://www.youtube.com/playlist?list=PLib4rFadvfrckeiUjBjYWnxtyUmW5-X8r)** {Classes after mid}
 - **[Mursalin Sir's Class Recordings](https://drive.google.com/drive/folders/1PtQaX_Sn47wt11GPSp-7TkgrNdwYvHwV?usp=drive_link)**
 - **[Farhan Feroz Sir's Youtube Playlist](https://www.youtube.com/playlist?list=PLBENQsMXh3gz85EJ3ZCSa9l9hnUiOer-H)**
 - [MIT Micheal Sipser's Lectures](https://www.youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY) {writer of the Text book we follow} (First 4 Lectures only)
@@ -765,7 +768,7 @@ Another solution could be,
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>9</sub> = {w ∈ {0, 1}*| L<sub>7</sub> • L<sub>8</sub> }</span>   
+<span style="font-size:1.2rem">L<sub>9</sub> = L<sub>7</sub> • L<sub>8</sub> </span>   
 </summary>
 <br>
 <p align="center">
@@ -845,5 +848,11 @@ Another solution could be,
 
 # Lecture 6
 ## NFA to DFA
-Consider the example L<sub>12</sub>
-L<sub>12</sub> = {w ∈ {0, 1}*| w ends with 11}
+Consider the example L<sub>12</sub>, </br>
+L<sub>12</sub> = {w ∈ {0, 1}*| w ends with 11} </br>
+### Epsilon-NFA to NFA to DFA
+L<sub>17</sub> = {w ∈ {a, b, c}*| w has some number of a followed by some number of b followed by some number of c}
+## Regular Expression
+To be added
+
+
