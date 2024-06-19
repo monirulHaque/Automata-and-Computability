@@ -41,6 +41,8 @@ Note that, </br>
     - [NFA Examples](#nfa-examples)
 - [Lecture 5](#lecture-5)
   - [More NFA Examples](#more-nfa-examples)
+- [Lecture 6](#lecture-6)
+  - [NFA to DFA](#nfa-to-dfa)
 
 # Course Overview
 ### Course Outline
@@ -94,6 +96,7 @@ Note that, </br>
 </p>
 
 # Lecture 1
+Date: 
 ## Theory of Computation
 Theory of Computation deals with the fundamental mathematical properties of computer hardware, software, and certain applications. In researching this topic, we want to know what can and cannot be computed, how quickly, with how much memory, and on what type of computational model. Traditionally the central three areas of Theory of Computation are: automata, computability, and complexity.
 
@@ -809,3 +812,38 @@ Another solution could be,
   <img src="Media\Lecture5\solve13.png" width="300"/>
 </p>
 </details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>14</sub> = {w ∈ {0, 1}*| length of w is multiple of 2 or 3}</span>   
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture5\solve14.png" width="300"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>15</sub> = {w ∈ {0, 1}*| w is (01)<sup>m</sup>, m >= 0}</span>   
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture5\solve15.png" width="300"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>16</sub> = {w ∈ {0, 1}*| w is (01)<sup>m</sup>, m >= 1}</span>   
+</summary>
+<br>
+<p align="center">
+  <img src="Media\Lecture5\solve16.png" width="300"/>
+</p>
+</details>
+
+# Lecture 6
+## NFA to DFA
+Consider the example L<sub>12</sub>
+L<sub>12</sub> = {w ∈ {0, 1}*| w ends with 11}
