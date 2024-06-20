@@ -43,9 +43,10 @@ Note that, </br>
   - [More NFA Examples](#more-nfa-examples)
 - [Lecture 6](#lecture-6)
   - [NFA to DFA](#nfa-to-dfa)
-    - [Epsilon-NFA to NFA to DFA](#epsilon-nfa-to-nfa-to-dfa)
-      - [Epsilon-NFA to NFA](#epsilon-nfa-to-nfa)
+    - [ε-NFA to NFA to DFA](#ε-nfa-to-nfa-to-dfa)
+      - [ε-NFA to NFA](#ε-nfa-to-nfa)
       - [NFA to DFA After Conversion](#nfa-to-dfa-after-conversion)
+- [Lecture 7](#lecture-7)
   - [Regular Expression](#regular-expression)
 
 # Course Overview
@@ -857,7 +858,7 @@ Consider the example <b>L<sub>12</sub> = {w ∈ {0, 1}*| w ends with 11}</b> </b
 </p>
 
 We will first construct the transition table of this NFA </br>
-| **&nbsp;**  | **0** | **1** |
+| **-----**  | **0** | **1** |
 |:-----:|:-----:|:-----:|
 | **A** | {A}   | {A,B} |
 | **B** | {}    | {C}   |
@@ -866,7 +867,7 @@ We will first construct the transition table of this NFA </br>
 Then we will create a transition table for the DFA. In that table, no transition can be empty {}. So, we will replace them with a Dead/Trap state. </br>
 Also, a single transition can not lead to multiple states in DFA so, here we will consider AB a new state. So, what will be the transition of the new state AB? mixture of both the transitions of A and B. According to the NFA transition table, the transition of 0 from A goes to A and B goes to nowhere, so the transition of 0 from AB should go to A. Again, according to the NFA transition table, the transition of 1 from A goes to A,B and B goes to C, so the transition of 1 from AB should go to a new state ABC. </br>
 
-| **&nbsp;**| **0** | **1** |
+| **-----** | **0** | **1** |
 |-----------|-------|-------|
 | **A**     | A     | A,B   |
 | **AB**    | A     | A,B,C |
@@ -881,12 +882,52 @@ The final DFA should look like the following *(You can also do it without transi
   <img src="Media\Lecture6\nfatodfa1_2.png" width="400"/>
 </p>
 
+Another example: https://www.educative.io/answers/how-to-convert-nfa-to-dfa
+### ε-NFA to NFA to DFA
+NFA's that have Epsilon transitions are called ε-NFA. We can not use the process of NFA to DFA we learnt on an ε-NFA. We need to convert it into a simplified NFA first. </br>
 
-### Epsilon-NFA to NFA to DFA
-L<sub>17</sub> = {w ∈ {a, b, c}*| w has some number of a followed by some number of b followed by some number of c}
-#### Epsilon-NFA to NFA
+#### ε-NFA to NFA
+Consider the following example
+**L<sub>17</sub> = {w ∈ {a, b, c}*| w has some number of a followed by some number of b followed by some number of c}**
+
+<p align="center">
+  <img src="Media\Lecture6\enfatodfa1_1.png" width="400"/>
+</p>
+
+The transition table looks a bit different. The transition of a from A goes to A, B and C becuase technically if the current state is A, after reading only "a" from the string, we can move to A or B or C. Same goes for the other transitions.
+
+| ----- | **a**   | **b** | **c** |
+|:-----:|:-------:|:-----:|:-----:|
+| **A** | {A,B,C} | {B,C} | {C}   |
+| **B** | {}      | {B,C} | {C}   |
+| **C** | {}      | {}    | {C}   |
+
+If we draw the NFA from this transition table, it would look like the following.
+
+<p align="center">
+  <img src="Media\Lecture6\enfatodfa1_2.png" width="400"/>
+</p>
+
 #### NFA to DFA After Conversion
+Now we can covert the NFA to DFA like the previous example.
+
+|   ------   | **a**   | **b** | **c** |
+|------------|---------|-------|-------|
+| **A**      | {A,B,C} | {B,C} | {C}   |
+| **ABC**    | {A,B,C} | {B,C} | {C}   |
+| **BC**     | Dead    | {B,C} | {C}   |
+| **C**      | Dead    | Dead  | {C}   |
+| **Dead**   | Dead    | Dead  | Dead  |
+
+<p align="center">
+  <img src="Media\Lecture6\enfatodfa1_3.png" width="500"/>
+</p>
+
+Another example: https://www.educative.io/answers/how-to-convert-epsilon-nfa-to-nfa
+
+# Lecture 7
 ## Regular Expression
-To be added
+Finite Automata were machine-like descriptions of Regular Languages and Regular Expressions are algorithmic expressions of Regular Languages. 
+
 
 
