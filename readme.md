@@ -44,6 +44,8 @@ Note that, </br>
 - [Lecture 6](#lecture-6)
   - [NFA to DFA](#nfa-to-dfa)
     - [Epsilon-NFA to NFA to DFA](#epsilon-nfa-to-nfa-to-dfa)
+      - [Epsilon-NFA to NFA](#epsilon-nfa-to-nfa)
+      - [NFA to DFA After Conversion](#nfa-to-dfa-after-conversion)
   - [Regular Expression](#regular-expression)
 
 # Course Overview
@@ -822,7 +824,7 @@ Another solution could be,
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture5\solve14.png" width="300"/>
+  <img src="Media\Lecture5\solve14.png" width="500"/>
 </p>
 </details>
 
@@ -832,7 +834,7 @@ Another solution could be,
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture5\solve15.png" width="300"/>
+  <img src="Media\Lecture5\solve15.png" width="500"/>
 </p>
 </details>
 
@@ -842,16 +844,48 @@ Another solution could be,
 </summary>
 <br>
 <p align="center">
-  <img src="Media\Lecture5\solve16.png" width="300"/>
+  <img src="Media\Lecture5\solve16.png" width="500"/>
 </p>
 </details>
 
 # Lecture 6
 ## NFA to DFA
-Consider the example L<sub>12</sub>, </br>
-L<sub>12</sub> = {w ∈ {0, 1}*| w ends with 11} </br>
+Converting NFA to DFA ensures determinism, facilitates algorithmic execution, and simplifies the automaton for practical use. </br>
+Consider the example <b>L<sub>12</sub> = {w ∈ {0, 1}*| w ends with 11}</b> </br>
+<p align="center">
+  <img src="Media\Lecture6\nfatodfa1_1.png" width="400"/>
+</p>
+
+We will first construct the transition table of this NFA </br>
+| **&nbsp;**  | **0** | **1** |
+|:-----:|:-----:|:-----:|
+| **A** | {A}   | {A,B} |
+| **B** | {}    | {C}   |
+| **C** | {}    | {}    |
+
+Then we will create a transition table for the DFA. In that table, no transition can be empty {}. So, we will replace them with a Dead/Trap state. </br>
+Also, a single transition can not lead to multiple states in DFA so, here we will consider AB a new state. So, what will be the transition of the new state AB? mixture of both the transitions of A and B. According to the NFA transition table, the transition of 0 from A goes to A and B goes to nowhere, so the transition of 0 from AB should go to A. Again, according to the NFA transition table, the transition of 1 from A goes to A,B and B goes to C, so the transition of 1 from AB should go to a new state ABC. </br>
+
+| **&nbsp;**| **0** | **1** |
+|-----------|-------|-------|
+| **A**     | A     | A,B   |
+| **AB**    | A     | A,B,C |
+| **ABC**   | A     | A,B,C |
+
+
+Lastly, the starting state should always be the same (here A) and the final states in the DFA should be the states that have the name of the final states of the NFA (here ABC). </br>
+
+The final DFA should look like the following *(You can also do it without transition table. Follow the class to learn that or just watch Mursali sir's video titled "NFA Part A")*
+</br>
+<p align="center">
+  <img src="Media\Lecture6\nfatodfa1_2.png" width="400"/>
+</p>
+
+
 ### Epsilon-NFA to NFA to DFA
 L<sub>17</sub> = {w ∈ {a, b, c}*| w has some number of a followed by some number of b followed by some number of c}
+#### Epsilon-NFA to NFA
+#### NFA to DFA After Conversion
 ## Regular Expression
 To be added
 
