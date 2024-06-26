@@ -48,6 +48,7 @@ Note that, </br>
       - [NFA to DFA After Conversion](#nfa-to-dfa-after-conversion)
 - [Lecture 7](#lecture-7)
   - [Regular Expression](#regular-expression)
+    - [Examples of Regular Language to Regular Expression](#examples-of-regular-language-to-regular-expression)
 
 # Course Overview
 ### Course Outline
@@ -1008,6 +1009,214 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
     </tr>
 </table>
 
+### Examples of Regular Language to Regular Expression
 
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>0</sub> = {w ∈ {0, 1}*| w contains 101 as a substring}</span>   
+</summary>
+<br>
+<p align="center">
 
+</p>
+</details>
 
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>1</sub> = {w ∈ {0, 1}*| w contains 101 as a subsequence}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>2</sub> = {w ∈ {0, 1}*| w starts with 101}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>3</sub> = {w ∈ {0, 1}*| w ends with 101}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>4</sub> = {w ∈ {0, 1}*| w contains 00 or 11}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>5</sub> = {w ∈ {0, 1}*| w contains exactly two 1s}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>6</sub> = {w ∈ {0, 1}*| w contains at least two 1s}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>7</sub> = {w ∈ {0, 1}*| w contains at most two 1s.}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>8</sub> = {w ∈ {0, 1}*| length of w is even or multiple of 2}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>9</sub> = {w ∈ {0, 1}*| length of w is odd}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>10</sub> = {w ∈ {0, 1}*| length of w is multiple of 3}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>11</sub> = {w ∈ {0, 1}*| number of 1’s in w is a multiple of 3}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>12</sub> = {w ∈ {0, 1}*| w starts and ends with different symbols}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>13</sub> = {w ∈ {0, 1}*| w starts and ends with the same symbols}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>14</sub> = {w ∈ {0, 1}*| w doesn’t end with 01}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>15</sub> = {w ∈ {0, 1}*| 0s and 1s alternate in w}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>16</sub> = {w ∈ {0, 1}*| w doesn’t contain 00}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>17</sub> = {w ∈ {0, 1}*| w doesn’t contain 10}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>18</sub> = {w ∈ {0, 1}*| w doesn’t contain 00 and 11}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>19</sub> = {w ∈ {0, 1}*| w contains 0 in every third position}</span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">L<sub>20</sub> = L̅<sub>19</sub></span>   
+</summary>
+<br>
+<p align="center">
+  
+</p>
+</details>
