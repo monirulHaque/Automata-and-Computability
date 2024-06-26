@@ -927,7 +927,87 @@ Another example: https://www.educative.io/answers/how-to-convert-epsilon-nfa-to-
 
 # Lecture 7
 ## Regular Expression
-Finite Automata were machine-like descriptions of Regular Languages and Regular Expressions are algorithmic expressions of Regular Languages. 
+Finite Automata were machine-like descriptions of Regular Languages and Regular Expressions are algorithmic expressions of Regular Languages. </br>
+In arithmetic, we can use the operations + and × to build up expressions such as (5 + 3) × 4. Similarly, we can use the regular operations to build up expressions describing languages, which are called regular expressions. An example is: (0 ∪ 1)0* </br>
+The value of the arithmetic expression is the number 32. The value of a regular expression is a language. In this case, the value is the language consisting of all strings starting with a 0 or a 1 followed by any number of 0s. </br>
+
+Regular expressions are commonly used in programming languages and other applications to specify patterns for searching and string matching. </br></br>
+
+Assuming that alphabet set Σ is {0,1}, lets check out the following examples of Regular Expression to Regular Language. </br>
+
+<table>
+    <tr>
+        <th>Regular Expression</th>
+        <th>Regular Language</td>
+        <th>Language Set</td>
+    </tr>
+    <tr>
+        <th>(0+1)</th>
+        <td>{w| length of w is one} </br> <i>It can also be written as (0U1) or (0|1) or Σ</i></td>
+        <td>{0, 1}</td>
+    </tr>
+    <tr>
+        <th>(0+1)(0+1)</th>
+        <td>{w| length of w is two}</td>
+        <td> {00, 01, 10, 11}</td>
+    </tr>
+    <tr>
+        <th>(0+1)*</th>
+        <td>{w| length of w is 0 or more }</td>
+        <td>{ε, 0, 1, 00, 01, 10, 11, 000, 001, ...}</td>
+    </tr>
+    <tr>
+        <th>(0+1)+</th>
+        <td>{w| length of w is 1 or more }</td>
+        <td>{0, 1, 00, 01, 10, 11, 000, ...}</td>
+    </tr>
+    <tr>
+        <th>0*</th>
+        <td>{w| w is any number of 0&#39;s}</td>
+        <td>{ε, 0, 00, 000, 0000, ...}</td>
+    </tr>
+    <tr>
+        <th>(01)*</th>
+        <td>{w| w is any number of 01 substring}</td>
+        <td>{ε, 01, 0101, 010101, ...}</td>
+    </tr>
+    <tr>
+        <th>0(0+1)*</th>
+        <td>{w| w starts with 0}</td>
+        <td>{0, 00, 01, 010, 011, ...}</td>
+    </tr>
+    <tr>
+        <th>0*10*</th>
+        <td>{w| w contains a single 1}</td>
+        <td>{1, 01, 010, 000100, ...}</td>
+    </tr>
+    <tr>
+        <th>Σ*1Σ*</th>
+        <td>{w| w has at least one 1}</td>
+        <td>{1, 11, 01, 10, 010, 110, 111, ...}</td>
+    </tr>
+    <tr>
+        <th>Σ*001Σ*</th>
+        <td>{w| w has a substring 001}</td>
+        <td>{001, 0001, 110010110, ...}</td>
+    </tr>
+    <tr>
+        <th>(ΣΣ)*</th>
+        <td>{w| w is a string of even length}</td>
+        <td>{ε, 00, 01, 10, 11, 1100, 0010, ...}</td>
+    </tr>
+    <tr>
+        <th>(ΣΣΣ)*</th>
+        <td>{w| the length of w is a multiple of 3}</td>
+        <td>{ε, 011, 110100, ...}</td>
+    </tr>
+    <tr>
+        <th>0Σ*0 ∪ 1Σ*1 ∪ 0 ∪ 1</th>
+        <td>{w| w starts and ends with same character}</td>
+        <td>{0, 1, 010, 111, 1010101, ...}</td>
+    </tr>
+</table>
+
 
 
 
