@@ -958,7 +958,7 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
         <td>{ε, 0, 1, 00, 01, 10, 11, 000, 001, ...}</td>
     </tr>
     <tr>
-        <th>(0+1)+</th>
+        <th>(0+1)<sup>+</sup></th>
         <td>{w| length of w is 1 or more }</td>
         <td>{0, 1, 00, 01, 10, 11, 000, ...}</td>
     </tr>
