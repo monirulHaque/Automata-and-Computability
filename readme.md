@@ -50,8 +50,8 @@ Note that, </br>
   - [Regular Expression](#regular-expression)
     - [Examples of Regular Language to Regular Expression](#examples-of-regular-language-to-regular-expression)
 - [Lecture 8](#lecture-8)
-  - [DFA to Regular Expression](#dfa-to-regular-expression)
-  - [Regular Expression to NFA](#regular-expression-to-nfa)
+  - [DFA to Regular Expression (State Elimiation Method)](#dfa-to-regular-expression-state-elimiation-method)
+  - [Regular Expression to NFA (Thompson's Construction)](#regular-expression-to-nfa-thompsons-construction)
 
 # Course Overview
 ### Course Outline
@@ -1225,5 +1225,29 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
 </details>
 
 # Lecture 8
-## DFA to Regular Expression
-## Regular Expression to NFA
+## DFA to Regular Expression (State Elimiation Method)
+Steps: 
+- If there exists any incoming edge to the initial state, then create a new initial state having no incoming edge to it.
+<p align="center">
+  <img src="Media\Lecture8\dfa2re_s1.png" width="500"/>
+</p>
+
+- If there exists multiple final states in the DFA, then convert all the final states into non-final states and create a new single final state.
+<p align="center">
+  <img src="Media\Lecture8\dfa2re_s2.png" width="500"/>
+</p>
+
+- If there exists any outgoing edge from the final state, then create a new final state having no outgoing edge from it.
+<p align="center">
+  <img src="Media\Lecture8\dfa2re_s3.png" width="500"/>
+</p>
+
+- Eliminate all the intermediate states one by one. These states may be eliminated in any order but you will have to follow the order in the question in exam. Only two states will be left in the end, Starting state and final state.
+
+<p align="center">
+  <img src="Media\Lecture8\dfa2re_s4.png" width="250"/>
+</p>
+
+Source: https://www.gatevidyalay.com/dfa-to-regular-expression-examples-automata/
+
+## Regular Expression to NFA (Thompson's Construction)
