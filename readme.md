@@ -49,6 +49,9 @@ Note that, </br>
 - [Lecture 7](#lecture-7)
   - [Regular Expression](#regular-expression)
     - [Examples of Regular Language to Regular Expression](#examples-of-regular-language-to-regular-expression)
+- [Lecture 8](#lecture-8)
+  - [DFA to Regular Expression](#dfa-to-regular-expression)
+  - [Regular Expression to NFA](#regular-expression-to-nfa)
 
 # Course Overview
 ### Course Outline
@@ -1220,3 +1223,7 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
   
 </p>
 </details>
+
+# Lecture 8
+## DFA to Regular Expression
+## Regular Expression to NFA
