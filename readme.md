@@ -51,6 +51,7 @@ Note that, </br>
     - [Examples of Regular Language to Regular Expression](#examples-of-regular-language-to-regular-expression)
 - [Lecture 8](#lecture-8)
   - [DFA to Regular Expression (State Elimiation Method)](#dfa-to-regular-expression-state-elimiation-method)
+- [Lecture 9](#lecture-9)
   - [Regular Expression to NFA (Thompson's Construction)](#regular-expression-to-nfa-thompsons-construction)
 
 # Course Overview
@@ -1242,12 +1243,33 @@ Steps:
   <img src="Media\Lecture8\dfa2re_s3.png" width="500"/>
 </p>
 
+Source: https://www.gatevidyalay.com/dfa-to-regular-expression-examples-automata/
+
 - Eliminate all the intermediate states one by one. These states may be eliminated in any order but you will have to follow the order in the question in exam. Only two states will be left in the end, Starting state and final state.
 
 <p align="center">
   <img src="Media\Lecture8\dfa2re_s4.png" width="250"/>
 </p>
 
-Source: https://www.gatevidyalay.com/dfa-to-regular-expression-examples-automata/
 
+<!-- 
+scenerios while elimination
+scenerio 1: 01*0
+scenerio 2: multiple in out from the state we are eliminating
+scenerio 3: merging multiple transitions into one
+scenerio 4: a,b self loops
+scenerio 5: multiple self loops
+scenerio 6: Trap/Dead State
+scenerio 7: loop from state to state
+
+From GateVidya Example 4, 3, 5
+ -->
+
+
+# Lecture 9
 ## Regular Expression to NFA (Thompson's Construction)
+<!-- 
+scenerio 1: 01 concatenation
+scenerio 2: 1* kleene closure (UFO)
+scenerio 3: (0+01) OR 
+ -->
