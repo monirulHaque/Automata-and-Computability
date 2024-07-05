@@ -1021,7 +1021,7 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
 </summary>
 <br>
 <p align="center">
-
+  Σ*101Σ*
 </p>
 </details>
 
@@ -1031,7 +1031,7 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
 </summary>
 <br>
 <p align="center">
-  
+  Σ*1Σ*0Σ*1Σ*
 </p>
 </details>
 
@@ -1041,7 +1041,7 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
 </summary>
 <br>
 <p align="center">
-  
+  101Σ*
 </p>
 </details>
 
@@ -1051,7 +1051,7 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
 </summary>
 <br>
 <p align="center">
-  
+  Σ*101
 </p>
 </details>
 
@@ -1061,7 +1061,7 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
 </summary>
 <br>
 <p align="center">
-  
+  Σ*(00+11)Σ*
 </p>
 </details>
 
@@ -1071,7 +1071,7 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
 </summary>
 <br>
 <p align="center">
-  
+  0*10*10*
 </p>
 </details>
 
@@ -1081,7 +1081,7 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
 </summary>
 <br>
 <p align="center">
-  
+  Σ*1Σ*1Σ*
 </p>
 </details>
 
@@ -1091,17 +1091,17 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
 </summary>
 <br>
 <p align="center">
-  
+  0*(1+ε)0*(1+ε)0*
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>8</sub> = {w ∈ {0, 1}*| length of w is even or multiple of 2}</span>   
+<span style="font-size:1.2rem">L<sub>8</sub> = {w ∈ {0, 1}*| length of w is even or divisible by 2}</span>   
 </summary>
 <br>
 <p align="center">
-  
+  (ΣΣ)*
 </p>
 </details>
 
@@ -1111,117 +1111,118 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
 </summary>
 <br>
 <p align="center">
-  
+  Σ(ΣΣ)*
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>10</sub> = {w ∈ {0, 1}*| length of w is multiple of 3}</span>   
+<span style="font-size:1.2rem">L<sub>10</sub> = {w ∈ {0, 1}*| length of w is divisible by 3}</span>   
 </summary>
 <br>
 <p align="center">
-  
+  (ΣΣΣ)*
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>11</sub> = {w ∈ {0, 1}*| number of 1’s in w is a multiple of 3}</span>   
+<span style="font-size:1.2rem">L<sub>11</sub> = {w ∈ {0, 1}*| length of w is not divisible by 3}</span>   
 </summary>
 <br>
 <p align="center">
-  
+  (ΣΣΣ)*Σ  + (ΣΣΣ)*ΣΣ
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>12</sub> = {w ∈ {0, 1}*| w starts and ends with different symbols}</span>   
+<span style="font-size:1.2rem">L<sub>12</sub> = {w ∈ {0, 1}*| number of 1’s in w is divisible by 3}</span>   
 </summary>
 <br>
 <p align="center">
-  
+  (0*10*10*10*)*
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>13</sub> = {w ∈ {0, 1}*| w starts and ends with the same symbols}</span>   
+<span style="font-size:1.2rem">L<sub>13</sub> = {w ∈ {0, 1}*| w starts and ends with different symbols}</span>   
 </summary>
 <br>
 <p align="center">
-  
+  0Σ*1 + 1Σ*0
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>14</sub> = {w ∈ {0, 1}*| w doesn’t end with 01}</span>   
+<span style="font-size:1.2rem">L<sub>14</sub> = {w ∈ {0, 1}*| w starts and ends with the same symbols}</span>   
 </summary>
 <br>
 <p align="center">
-  
+  0Σ*1 + 1Σ*0
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>15</sub> = {w ∈ {0, 1}*| 0s and 1s alternate in w}</span>   
+<span style="font-size:1.2rem">L<sub>15</sub> = {w ∈ {0, 1}*| w doesn’t end with 01}</span>   
 </summary>
 <br>
 <p align="center">
-  
+  Σ*(00 + 10 + 11) + 0 + 1 + ε &nbsp;&nbsp;&nbsp; OR &nbsp;&nbsp;&nbsp; Σ*(0 + 11) + 1 + ε
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>16</sub> = {w ∈ {0, 1}*| w doesn’t contain 00}</span>   
+<span style="font-size:1.2rem">L<sub>16</sub> = {w ∈ {0, 1}*| 0s and 1s alternate in w}</span>   
 </summary>
 <br>
 <p align="center">
-  
+  (1+ε)(01)*(0+ε)
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>17</sub> = {w ∈ {0, 1}*| w doesn’t contain 10}</span>   
+<span style="font-size:1.2rem">L<sub>17</sub> = {w ∈ {0, 1}*| w doesn’t contain 00}</span>   
 </summary>
 <br>
 <p align="center">
-  
+  1*(01<sup>+</sup>)*(0+ε)
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>18</sub> = {w ∈ {0, 1}*| w doesn’t contain 00 and 11}</span>   
+<span style="font-size:1.2rem">L<sub>18</sub> = {w ∈ {0, 1}*| w doesn’t contain 10}</span>   
 </summary>
 <br>
 <p align="center">
-  
+  0*1*
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>19</sub> = {w ∈ {0, 1}*| w contains 0 in every third position}</span>   
+<span style="font-size:1.2rem">L<sub>19</sub> = {w ∈ {0, 1}*| w doesn’t contain 00 and 11}</span>   
 </summary>
 <br>
 <p align="center">
-  
+  (1+ε)(01)*(0+ε) </br>
+  Same as L<sub>16</sub>
 </p>
 </details>
 
 <details>
 <summary>
-<span style="font-size:1.2rem">L<sub>20</sub> = L̅<sub>19</sub></span>   
+<span style="font-size:1.2rem">L<sub>20</sub> = {w ∈ {0, 1}*| w contains 0 in every third position}</span>   
 </summary>
 <br>
 <p align="center">
-  
+  (ΣΣ0)*(ε + Σ + ΣΣ)
 </p>
 </details>
 
