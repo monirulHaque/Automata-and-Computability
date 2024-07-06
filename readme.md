@@ -1161,7 +1161,7 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
 </summary>
 <br>
 <p align="center">
-  0Σ*1 + 1Σ*0
+  0Σ*0 + 1Σ*1 + 0 + 1
 </p>
 </details>
 
