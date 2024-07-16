@@ -1244,15 +1244,37 @@ Steps:
   <img src="Media\Lecture8\dfa2re_s3.png" width="500"/>
 </p>
 
-Source: https://www.gatevidyalay.com/dfa-to-regular-expression-examples-automata/
-
 - Eliminate all the intermediate states one by one. These states may be eliminated in any order but you will have to follow the order in the question in exam. Only two states will be left in the end, Starting state and final state.
 
 <p align="center">
   <img src="Media\Lecture8\dfa2re_s4.png" width="250"/>
 </p>
 
+#### Scenerios While Elimination
+##### Scenerio 1: 01*0
+<p>
+  <img src="Media\Lecture8\situation1_1.png" width="300"/>
+</p>
 
+
+
+<p>
+  <img src="Media\Lecture8\situation1_1.png" width="300"/>
+</p>
+
+##### Scenerio 2: multiple in out from the state we are eliminating
+##### Scenerio 3: merging multiple transitions into one
+##### Scenerio 4: a,b self loops
+##### Scenerio 5: multiple self loops
+##### Scenerio 6: Trap/Dead State
+##### Scenerio 7: loop from state to state
+
+### Example
+
+
+
+
+More examples here: https://www.gatevidyalay.com/dfa-to-regular-expression-examples-automata/
 <!-- 
 scenerios while elimination
 scenerio 1: 01*0
