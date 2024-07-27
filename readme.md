@@ -51,6 +51,15 @@ Note that, </br>
     - [Examples of Regular Language to Regular Expression](#examples-of-regular-language-to-regular-expression)
 - [Lecture 8](#lecture-8)
   - [DFA to Regular Expression (State Elimiation Method)](#dfa-to-regular-expression-state-elimiation-method)
+      - [Scenerios While Elimination](#scenerios-while-elimination)
+        - [Scenerio 1: 01\*0](#scenerio-1-010)
+        - [Scenerio 2: multiple in out from the state we are eliminating](#scenerio-2-multiple-in-out-from-the-state-we-are-eliminating)
+        - [Scenerio 3: merging multiple transitions into one](#scenerio-3-merging-multiple-transitions-into-one)
+        - [Scenerio 4: Commas in transitions](#scenerio-4-commas-in-transitions)
+        - [Scenerio 5: multiple self loops](#scenerio-5-multiple-self-loops)
+        - [Scenerio 6: Trap/Dead State](#scenerio-6-trapdead-state)
+        - [Scenerio 7: loop from state to state](#scenerio-7-loop-from-state-to-state)
+    - [Example](#example)
 - [Lecture 9](#lecture-9)
   - [Regular Expression to NFA (Thompson's Construction)](#regular-expression-to-nfa-thompsons-construction)
 
@@ -1252,20 +1261,66 @@ Steps:
 
 #### Scenerios While Elimination
 ##### Scenerio 1: 01*0
+
+Suppose, A, B, C are some states in a DFA
 <p>
-  <img src="Media\Lecture8\situation1_1.png" width="300"/>
+  <img src="Media\Lecture8\situation1_1.png" width="350"/>
 </p>
-
-
-
+After elimiating B the transition from A to C will look like this
 <p>
-  <img src="Media\Lecture8\situation1_1.png" width="300"/>
+  <img src="Media\Lecture8\situation1_2.png" width="350"/>
 </p>
 
 ##### Scenerio 2: multiple in out from the state we are eliminating
+Suppose, here we need to eliminate B.
+<p>
+  <img src="Media\Lecture8\situation2_1.png" width="350"/>
+</p>
+After elimiating B we get AC and AD, two new transitions.
+<p>
+  <img src="Media\Lecture8\situation2_2.png" width="350"/>
+</p>
+
 ##### Scenerio 3: merging multiple transitions into one
-##### Scenerio 4: a,b self loops
+Suppose, here we need to eliminate B.
+<p>
+  <img src="Media\Lecture8\situation3_1.png" width="350"/>
+</p>
+After elimiation there are two transitions from A to C.
+<p>
+  <img src="Media\Lecture8\situation3_2.png" width="350"/>
+</p>
+We can just merge the transitions using OR symbol (U, |, +)
+<p>
+  <img src="Media\Lecture8\situation3_3.png" width="350"/>
+</p>
+
+##### Scenerio 4: Commas in transitions
+<p>
+  <img src="Media\Lecture8\situation4_1.png" width="350"/>
+</p>
+
+<p>
+  <img src="Media\Lecture8\situation4_2.png" width="350"/>
+</p>
+
+<p>
+  <img src="Media\Lecture8\situation4_3.png" width="350"/>
+</p>
+
 ##### Scenerio 5: multiple self loops
+<p>
+  <img src="Media\Lecture8\situation5_1.png" width="350"/>
+</p>
+
+<p>
+  <img src="Media\Lecture8\situation5_2.png" width="350"/>
+</p>
+
+<p>
+  <img src="Media\Lecture8\situation4_3.png" width="350"/>
+</p>
+
 ##### Scenerio 6: Trap/Dead State
 ##### Scenerio 7: loop from state to state
 
