@@ -1389,7 +1389,7 @@ NFA:
 Regular Expression: **1\***
 NFA: 
 <p>
-  <img src="Media\Lecture9\situation2.png" width="350"/>
+  <img src="Media\Lecture9\situation2.png" width="400"/>
 </p>
 
 We just add two extra states and draw UFO. At first glance it might look unnecessary but drawing UFO works every time; even on very complicated regular expressions (Check examples).
@@ -1398,13 +1398,17 @@ We just add two extra states and draw UFO. At first glance it might look unneces
 Regular Expression: **(0+01)**
 NFA: 
 <p>
-  <img src="Media\Lecture9\situation3.png" width="350"/>
+  <img src="Media\Lecture9\situation3.png" width="400"/>
 </p>
 
 We just split to draw them separately and connect them again at the end.
 
 ### Example
-Regular Expression: **(0+01\*+(11)\*)\*0**
+Regular Expression: **10(0+01<sup>+</sup>+(11)\*)\*0**
 
 NFA:
-To be Added
+*Notice the 01<sup>+</sup>, the above three scenerios doesn't cover it. Or does it? </br> 01<sup>+</sup> actually means 011\*. So, yes the scenerio 1 and 2 covers it.*
+
+<p>
+  <img src="Media\Lecture9\example1.png"/>
+</p>
