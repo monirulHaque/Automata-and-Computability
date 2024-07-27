@@ -1366,7 +1366,7 @@ Now, we can just eliminate B as usual.
 
 
 
-More examples here: https://www.gatevidyalay.com/dfa-to-regular-expression-examples-automata/
+Check Examples here: https://www.gatevidyalay.com/dfa-to-regular-expression-examples-automata/
 <!-- 
 From GateVidya Example 4, 3, 5
  -->
