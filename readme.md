@@ -64,8 +64,8 @@ Note that, </br>
   - [Regular Expression to NFA (Thompson's Construction)](#regular-expression-to-nfa-thompsons-construction)
     - [Scenerios while building NFA from a regular expression](#scenerios-while-building-nfa-from-a-regular-expression)
       - [Scenerio 1: Concatenation](#scenerio-1-concatenation)
-      - [Scenerio 2:  kleene closure](#scenerio-2--kleene-closure)
-      - [Scenerio 3: (0+01) OR](#scenerio-3-001-or)
+      - [Scenerio 2:  Kleene Closure](#scenerio-2--kleene-closure)
+      - [Scenerio 3: OR](#scenerio-3-or)
     - [Example](#example-1)
 
 # Course Overview
@@ -1385,7 +1385,7 @@ NFA:
   <img src="Media\Lecture9\situation1.png" width="350"/>
 </p>
 
-#### Scenerio 2:  kleene closure
+#### Scenerio 2:  Kleene Closure
 Regular Expression: **1\***
 NFA: 
 <p>
@@ -1394,7 +1394,7 @@ NFA:
 
 We just add two extra states and draw UFO. At first glance it might look unnecessary but drawing UFO works every time; even on very complicated regular expressions (Check examples).
 
-#### Scenerio 3: (0+01) OR 
+#### Scenerio 3: OR 
 Regular Expression: **(0+01)**
 NFA: 
 <p>
