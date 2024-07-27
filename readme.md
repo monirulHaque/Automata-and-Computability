@@ -62,6 +62,10 @@ Note that, </br>
     - [Example](#example)
 - [Lecture 9](#lecture-9)
   - [Regular Expression to NFA (Thompson's Construction)](#regular-expression-to-nfa-thompsons-construction)
+    - [Scenerios while building NFA from a regular expression](#scenerios-while-building-nfa-from-a-regular-expression)
+      - [Scenerio 1: Concatenation](#scenerio-1-concatenation)
+      - [Scenerio 2:  kleene closure (UFO)](#scenerio-2--kleene-closure-ufo)
+      - [Scenerio 3: (0+01) OR](#scenerio-3-001-or)
 
 # Course Overview
 ### Course Outline
@@ -1260,6 +1264,7 @@ Steps:
 </p>
 
 #### Scenerios While Elimination
+*Imagine the following examples are some part of the DFAs, not the whole DFA.*
 ##### Scenerio 1: 01*0
 
 Suppose, A, B, C are some states in a DFA
@@ -1296,33 +1301,64 @@ We can just merge the transitions using OR symbol (U, |, +)
 </p>
 
 ##### Scenerio 4: Commas in transitions
+Suppose, here we need to eliminate B.
 <p>
   <img src="Media\Lecture8\situation4_1.png" width="350"/>
 </p>
 
+Commas on transitions just means OR. So we need to replace them to convert them to Regular Expression.
+
 <p>
   <img src="Media\Lecture8\situation4_2.png" width="350"/>
 </p>
+
+Then we can just remove B as usual.
 
 <p>
   <img src="Media\Lecture8\situation4_3.png" width="350"/>
 </p>
 
 ##### Scenerio 5: multiple self loops
+Suppose, here we need to eliminate B and B got another self loop from removing some other states.
 <p>
   <img src="Media\Lecture8\situation5_1.png" width="350"/>
 </p>
+
+We can just use OR to merge them like Scenerio 3.
 
 <p>
   <img src="Media\Lecture8\situation5_2.png" width="350"/>
 </p>
 
+##### Scenerio 6: Trap/Dead State
+Suppose, here we need to eliminate D.
 <p>
-  <img src="Media\Lecture8\situation4_3.png" width="350"/>
+  <img src="Media\Lecture8\situation6_1.png" width="350"/>
 </p>
 
-##### Scenerio 6: Trap/Dead State
+Other states will not change after eliminating Dead/Trap States.
+
+<p>
+  <img src="Media\Lecture8\situation6_2.png" width="350"/>
+</p>
+
 ##### Scenerio 7: loop from state to state
+Suppose, here we need to eliminate B but B has a loop with A.
+<p>
+  <img src="Media\Lecture8\situation7_1.png" width="350"/>
+</p>
+
+From B to A to B we get 1(0+1). So, we can just get rid of the B -> A transition and imagine a self loop to replace that so that the output of the Finite Automata remains the same.
+
+<p>
+  <img src="Media\Lecture8\situation7_2.png" width="350"/>
+</p>
+
+Now, we can just eliminate B as usual.
+
+<p>
+  <img src="Media\Lecture8\situation7_3.png" width="350"/>
+</p>
 
 ### Example
 
@@ -1331,23 +1367,33 @@ We can just merge the transitions using OR symbol (U, |, +)
 
 More examples here: https://www.gatevidyalay.com/dfa-to-regular-expression-examples-automata/
 <!-- 
-scenerios while elimination
-scenerio 1: 01*0
-scenerio 2: multiple in out from the state we are eliminating
-scenerio 3: merging multiple transitions into one
-scenerio 4: a,b self loops
-scenerio 5: multiple self loops
-scenerio 6: Trap/Dead State
-scenerio 7: loop from state to state
-
 From GateVidya Example 4, 3, 5
  -->
 
 
 # Lecture 9
 ## Regular Expression to NFA (Thompson's Construction)
-<!-- 
-scenerio 1: 01 concatenation
-scenerio 2: 1* kleene closure (UFO)
-scenerio 3: (0+01) OR 
- -->
+In <a href="#why-do-we-need-nfa">Why do we need NFA</a>, we learnt that it's easy to build concatenation, OR and kleene closure in NFA. A regular expression is mainly made of these three things. So, lets take a look at the following scenerios:
+
+### Scenerios while building NFA from a regular expression
+
+#### Scenerio 1: Concatenation
+Regular Expression: **01**
+NFA: 
+<p>
+  <img src="Media\Lecture9\situation1.png" width="350"/>
+</p>
+
+#### Scenerio 2:  kleene closure (UFO)
+Regular Expression: **1\***
+NFA: 
+<p>
+  <img src="Media\Lecture9\situation2.png" width="350"/>
+</p>
+
+#### Scenerio 3: (0+01) OR 
+Regular Expression: **(0+01)**
+NFA: 
+<p>
+  <img src="Media\Lecture9\situation3.png" width="350"/>
+</p>
