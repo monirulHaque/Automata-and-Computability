@@ -667,7 +667,7 @@ But the DFA solution for that regular language is much more complicated and toug
     </li>
     <li>Kleene Closure (*)
     <p align="center">
-        <img src="Media/Lecture4/lec4star.png" width="400"/>
+        <img src="Media/Lecture4/lec4Star.png" width="400"/>
     </p>
     </li>
 </ul>
