@@ -167,7 +167,7 @@ The set with zero members is called the empty set and is written ∅. </br>
 A set with two members is called an unordered pair. </br>
 
 Example of a set, </br>
-S = {n| n = m2 for some m ∈ N} 	</br>
+S = {n| n = m<sup>2</sup> for some m ∈ N} 	</br>
    = {1, 4, 9, 16...}		</br>			
 Here, **|** symbol means **"such that"** and **∈** means **"element of"** or **"belongs to"**.    </br>          
 We can write, 7 ∈ {7, 21, 57} and 8 ∉ {7, 21, 57}  </br>
@@ -180,43 +180,43 @@ We can write, 7 ∈ {7, 21, 57} and 8 ∉ {7, 21, 57}  </br>
 * A is a subset of B, written A ⊆ B, if every member of A also is a member of B.  </br>
 * A is a proper subset of B, written A⊂B, if A is a subset of B and not equal to B. </br>
 Example: 
-If  A = {1, 2, 3}; 	B = {1, 2, 3}    Then, A ⊆ B  and A⊂B </br>
+If  A = {1, 2, 3}; 	B = {1, 2, 3}    Then, A ⊆ B  and A⊄B </br>
 If  A = {1, 2}; 	B = {1, 2, 3}    Then, A ⊆ B  and A⊂B </br>
 
 ### Strings and Languages
-* Symbol: a character
+* Symbol: a character </br>
   Example: a, c, Z, 0, 9, α, ক
-* Alphabet: a finite set of symbols 
+* Alphabet: a finite set of symbols </br>
   *We generally use capital Greek letters capital sigma Σ or capital gamma Γ to designate alphabets*
-* String: a finite sequence of symbols over an alphabet set. 
-  *An empty string is represented using epsilon, ε*
-  *Any part of a string is called substring*
-* Language: a set of strings
-Example: 
-Σ = {0,1} 			
-01001 is a string over Σ   		
+* String: a finite sequence of symbols over an alphabet set. </br>
+  *An empty string is represented using epsilon, ε* </br>
+  *Any part of a string is called substring* 
+* Language: a set of strings 
+Example: </br>
+Σ = {0,1} </br>			
+01001 is a string over Σ </br>  		
 {0, 01, 10, 01001} is a language over Σ  
 
 ### Regular operations
-Suppose, 
-A = {1, 3, 4}	  
-B = {3, 4, 6}   
+Suppose, </br>
+A = {1, 3, 4} </br>	  
+B = {3, 4, 6} </br>   
 Universal set, U = {1, 2, 3, 4, 5, 6}
 
 <p align="center">
   <img src="Media/Lecture1/lec1fig3.png" width="500"/>
 </p>
  
-**Compliment** of A = **A̅**= {2, 5, 6}
-**Union** of A and B = **A ∪ B** = {1, 3, 4, 6}
+**Compliment** of A = **A̅**= {2, 5, 6} </br>
+**Union** of A and B = **A ∪ B** = {1, 3, 4, 6} </br>
 **Intersection** of A and B = **A ∩ B** = {3, 4}
 
-Suppose,
-String P = "Bangla"
-String Q = "desh"
+Suppose, </br>
+String P = "Bangla" </br>
+String Q = "desh" </br>
 
-**Concatanation** of P and Q = **P◦Q** = {xy| x ∈ P and y ∈ Q} = "Bangladesh"
-**Kleene Closure** of Q = Q* = {x<sub>1</sub>x<sub>2</sub> . . . x<sub>k</sub>| k ≥ 0 and each x<sub>i</sub> ∈ Q} = ε, desh, deshdesh, deshdeshdesh...
+**Concatanation** of P and Q = **P◦Q** = {xy| x ∈ P and y ∈ Q} = "Bangladesh" </br>
+**Kleene Closure** of Q = Q* = {x<sub>1</sub>x<sub>2</sub> . . . x<sub>k</sub>| k ≥ 0 and each x<sub>i</sub> ∈ Q} = ε, desh, deshdesh, deshdeshdesh... 
 
 ## Regular Language and Finite Automata
 * Finite automata are mathematical models for computers with an extremely limited amount of memory.
