@@ -103,7 +103,7 @@ Note that, </br>
 - Kozen, D.C. *Automata and Computability*. [Link](https://vishub.org/officedocs/13770.pdf)
 #### Other Resources
 - **[Kabbya Sir's Class Recordings](https://www.youtube.com/playlist?list=PLib4rFadvfrckeiUjBjYWnxtyUmW5-X8r)** {Classes after mid}
-- **[Mursalin Sir's Class Recordings](https://drive.google.com/drive/folders/1PtQaX_Sn47wt11GPSp-7TkgrNdwYvHwV?usp=drive_link)**
+- **[Mursalin Sir's Class Recordings](https://www.youtube.com/playlist?list=PLaVWjQSl4OrjwIA_629AbCDKZPyN2QOCp)**
 - **[Farhan Feroz Sir's Youtube Playlist](https://www.youtube.com/playlist?list=PLBENQsMXh3gz85EJ3ZCSa9l9hnUiOer-H)**
 - [MIT Micheal Sipser's Lectures](https://www.youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY) {writer of the Text book we follow} (First 4 Lectures only)
 - [Easy Theory Youtube Channel](https://www.youtube.com/@EasyTheory/featured)
