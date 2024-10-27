@@ -97,12 +97,6 @@ To be announced
 
 *Also Check out the [Resources](Resources/README.md) for some awesome tools*
 
-<> ### Consultation
-
-<> <p align="center">
-<>   <img src="Media/Consultation.png"/>
-<> </p> 
-
 # Lecture 0
 Date: 22 Oct, 2024
 ## Theory of Computation
