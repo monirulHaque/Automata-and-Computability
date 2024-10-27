@@ -16,7 +16,7 @@ Note that, </br>
       - [Textbooks](#textbooks)
       - [Other Resources](#other-resources)
     - [Consultation](#consultation)
-- [Lecture 1](#lecture-1)
+- [Lecture 0](#lecture-0)
   - [Theory of Computation](#theory-of-computation)
   - [What is Computability theory?](#what-is-computability-theory)
   - [What is Automata theory?](#what-is-automata-theory)
@@ -25,6 +25,7 @@ Note that, </br>
       - [Subset](#subset)
     - [Strings and Languages](#strings-and-languages)
     - [Regular operations](#regular-operations)
+- [Lecture 1](#lecture-1)
   - [Regular Language and Finite Automata](#regular-language-and-finite-automata)
     - [DFA (Deterministic Finite Automata)](#dfa-deterministic-finite-automata)
     - [Example Problems of Regular Language to DFA](#example-problems-of-regular-language-to-dfa)
@@ -120,7 +121,7 @@ Note that, </br>
   <img src="Media/Consultation.png"/>
 </p>
 
-# Lecture 1
+# Lecture 0
 Date: 
 ## Theory of Computation
 Theory of Computation deals with the fundamental mathematical properties of computer hardware, software, and certain applications. In researching this topic, we want to know what can and cannot be computed, how quickly, with how much memory, and on what type of computational model. Traditionally the central three areas of Theory of Computation are: automata, computability, and complexity.
@@ -218,6 +219,7 @@ String Q = "desh" </br>
 **Concatanation** of P and Q = **P◦Q** = {xy| x ∈ P and y ∈ Q} = "Bangladesh" </br>
 **Kleene Closure** of Q = Q* = {x<sub>1</sub>x<sub>2</sub> . . . x<sub>k</sub>| k ≥ 0 and each x<sub>i</sub> ∈ Q} = ε, desh, deshdesh, deshdeshdesh... 
 
+# Lecture 1
 ## Regular Language and Finite Automata
 * Finite automata are mathematical models for computers with an extremely limited amount of memory.
 * Automata is a plural form of Automaton. So, a single model is called a finite automaton or a finite state machine.
@@ -288,16 +290,6 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
 </p>
 </details>
 
-
-
-<br><br>
-
-
-
-# Lecture 2
-
-## More Example problems of Regular Language to DFA
-
 <details>
 <summary>
 <span style="font-size:1.2rem">L<sub>3</sub> = {w ∈ {0, 1}*| w has odd number of 1's}</span>
@@ -338,6 +330,14 @@ Don't get overwhelmed already. If you are confused, no problem at all. We’ve w
   <img src="Media\Lecture1\solve6.png" width="500"/>
 </p>
 </details>
+
+<br><br>
+
+
+
+# Lecture 2
+
+## More Example problems of Regular Language to DFA
 
 <details>
 <summary>
