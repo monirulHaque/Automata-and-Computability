@@ -122,7 +122,7 @@ Note that, </br>
 </p>
 
 # Lecture 0
-Date: 
+Date: 22 Oct, 2024
 ## Theory of Computation
 Theory of Computation deals with the fundamental mathematical properties of computer hardware, software, and certain applications. In researching this topic, we want to know what can and cannot be computed, how quickly, with how much memory, and on what type of computational model. Traditionally the central three areas of Theory of Computation are: automata, computability, and complexity.
 
@@ -220,6 +220,7 @@ String Q = "desh" </br>
 **Kleene Closure** of Q = Q* = {x<sub>1</sub>x<sub>2</sub> . . . x<sub>k</sub>| k ≥ 0 and each x<sub>i</sub> ∈ Q} = ε, desh, deshdesh, deshdeshdesh... 
 
 # Lecture 1
+Date: 27 Oct, 2024
 ## Regular Language and Finite Automata
 * Finite automata are mathematical models for computers with an extremely limited amount of memory.
 * Automata is a plural form of Automaton. So, a single model is called a finite automaton or a finite state machine.
