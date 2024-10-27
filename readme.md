@@ -15,7 +15,7 @@ Note that, </br>
     - [Resources](#resources)
       - [Textbooks](#textbooks)
       - [Other Resources](#other-resources)
-    - [Consultation](#consultation)
+   <> - [Consultation](#consultation)
 - [Lecture 0](#lecture-0)
   - [Theory of Computation](#theory-of-computation)
   - [What is Computability theory?](#what-is-computability-theory)
