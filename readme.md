@@ -1173,7 +1173,7 @@ Assuming that alphabet set Σ is {0,1}, lets check out the following examples of
 </summary>
 <br>
 <p align="center">
-  (1+ε)(01)*(0+ε)
+  (01)*(0+ε) + (10)*(1+ε) &nbsp;&nbsp;&nbsp;OR&nbsp;&nbsp;&nbsp; (1+ε)(01)*(0+ε)
 </p>
 </details>
 
