@@ -1,0 +1,3 @@
+[submodule "resources/Validate-your-DFA-model"]
+	path = resources/Validate-your-DFA-model
+	url = https://github.com/turtle-shifa/Validate-your-DFA-model.git
