@@ -449,7 +449,6 @@ Date: 29 Oct, 2024
 </br></br>
 
 # Lecture 3
-Date: 3 Nov, 2024
 ## Regular Operations Truth Table
 <p align="center">
   <img src="Media\Lecture3\lec3fig1.png" width="500"/>
@@ -590,7 +589,6 @@ In XOR (⊕), We will just keep the accept states of OR but we will get rid of t
 </br> </br>
 
 # Lecture 4
-Date: 5 Nov, 2024
 ## NFA (Non-deterministic Finite Automata)
 <p>NFA is basically DFA with less restrictions. Remember the properties of <a href="#dfa-deterministic-finite-automata">DFA</a>? NFAs are more flexible and expressive, allowing multiple transitions and epsilon transitions, while DFAs are more restrictive.
 What NFAs can have that DFAs can't: </br>
