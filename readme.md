@@ -98,7 +98,6 @@ To be announced
 *Also Check out the [Resources](Resources/README.md) for some awesome tools*
 
 # Lecture 0
-Date: 22 Oct, 2024
 ## Theory of Computation
 Theory of Computation deals with the fundamental mathematical properties of computer hardware, software, and certain applications. In researching this topic, we want to know what can and cannot be computed, how quickly, with how much memory, and on what type of computational model. Traditionally the central three areas of Theory of Computation are: automata, computability, and complexity.
 
@@ -196,7 +195,6 @@ String Q = "desh" </br>
 **Kleene Closure** of Q = Q* = {x<sub>1</sub>x<sub>2</sub> . . . x<sub>k</sub>| k ≥ 0 and each x<sub>i</sub> ∈ Q} = ε, desh, deshdesh, deshdeshdesh... 
 
 # Lecture 1
-Date: 27 Oct, 2024
 ## Regular Language and Finite Automata
 * Finite automata are mathematical models for computers with an extremely limited amount of memory.
 * Automata is a plural form of Automaton. So, a single model is called a finite automaton or a finite state machine.
@@ -415,6 +413,36 @@ Date: 29 Oct, 2024
 <br>
 <p align="center">
   <img src="Media\Lecture2\solve16.png" width="500"/>
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">P<sub>1</sub> = {w ∈ {0, 1}*| length of w is multiple of 5}</span>
+</summary>
+<br>
+<p align="center">
+  Try it yourself
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">P<sub>2</sub> = {w ∈ {0, 1}*| length of w is 3n+1 where n >= 0}</span>
+</summary>
+<br>
+<p align="center">
+  Try it yourself
+</p>
+</details>
+
+<details>
+<summary>
+<span style="font-size:1.2rem">P<sub>3</sub> = {w ∈ {0, 1}*| length of w is 2 less than multiple of 4}</span>
+</summary>
+<br>
+<p align="center">
+  Try it yourself
 </p>
 </details>
 
