@@ -1,4 +1,4 @@
-This repository contains all of my lecture contents, practice sheets and other course materials of the course Automata and Computability. </br>
+This repository contains all of my lecture contents, practice sheets and other course materials of the course CSE331: Automata and Computability. </br>
 
 Note that, </br>
 - You might still need to attend classes to fully understand the thought process behind the solutions
